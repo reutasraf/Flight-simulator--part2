@@ -8,6 +8,7 @@ int main() {
     BreadthFirstSearch<double> bdf;
     Test t;
     t.testAll();
+    int i=0;
 
     return 0;
 }
