@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/tehila/CLionProjects/part2New/cmake-build-debug"/>
+				<Option working_dir="/home/reut/CLionProjects/part2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/tehila/CLionProjects/part2New/cmake-build-debug"/>
+				<Option working_dir="/home/reut/CLionProjects/part2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/tehila/CLionProjects/part2New/cmake-build-debug"/>
+				<Option working_dir="/home/reut/CLionProjects/part2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj2">
-				<Option output="/home/tehila/CLionProjects/part2New/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tehila/CLionProjects/part2New/cmake-build-debug"/>
+				<Option output="/home/reut/CLionProjects/part2/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reut/CLionProjects/part2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="proj2/fast">
-				<Option output="/home/tehila/CLionProjects/part2New/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tehila/CLionProjects/part2New/cmake-build-debug"/>
+				<Option output="/home/reut/CLionProjects/part2/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reut/CLionProjects/part2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,101 +77,101 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tehila/CLionProjects/part2New/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/part2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tehila/CLionProjects/part2New/BreadthFirstSearch.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/BreadthFirstSearch.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/BreadthFirstSearch.h">
+		<Unit filename="/home/reut/CLionProjects/part2/BreadthFirstSearch.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/ChachManager.h">
+		<Unit filename="/home/reut/CLionProjects/part2/ChachManager.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/ClientHandler.h">
+		<Unit filename="/home/reut/CLionProjects/part2/ClientHandler.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/FileCacheManager.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/FileCacheManager.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/FileCacheManager.h">
+		<Unit filename="/home/reut/CLionProjects/part2/FileCacheManager.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/IStreamReader.h">
+		<Unit filename="/home/reut/CLionProjects/part2/IStreamReader.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MyClientHandler.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/MyClientHandler.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MyClientHandler.h">
+		<Unit filename="/home/reut/CLionProjects/part2/MyClientHandler.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MySerialServer.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MySerialServer.h">
+		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MyTestClientHandler.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/MyTestClientHandler.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/MyTestClientHandler.h">
+		<Unit filename="/home/reut/CLionProjects/part2/MyTestClientHandler.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/OStreamWriter.h">
+		<Unit filename="/home/reut/CLionProjects/part2/OStreamWriter.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Searchable.h">
+		<Unit filename="/home/reut/CLionProjects/part2/Searchable.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Searcher.h">
+		<Unit filename="/home/reut/CLionProjects/part2/Searcher.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Server.h">
+		<Unit filename="/home/reut/CLionProjects/part2/Server.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/SocketRead.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/SocketRead.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/SocketRead.h">
+		<Unit filename="/home/reut/CLionProjects/part2/SocketRead.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/SocketWrite.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/SocketWrite.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/SocketWrite.h">
+		<Unit filename="/home/reut/CLionProjects/part2/SocketWrite.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Solver.h">
+		<Unit filename="/home/reut/CLionProjects/part2/Solver.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/State.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/State.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/State.h">
+		<Unit filename="/home/reut/CLionProjects/part2/State.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/StringReverser.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/StringReverser.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/StringReverser.h">
+		<Unit filename="/home/reut/CLionProjects/part2/StringReverser.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Test.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/Test.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/Test.h">
+		<Unit filename="/home/reut/CLionProjects/part2/Test.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/main.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/main.cpp">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/tehila/CLionProjects/part2New/CMakeLists.txt">
+		<Unit filename="/home/reut/CLionProjects/part2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

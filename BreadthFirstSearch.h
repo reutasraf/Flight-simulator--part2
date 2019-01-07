@@ -4,13 +4,14 @@
 #define PROJ2_BREADTHFIRSTSEARCH_H
 
 #include <list>
+#include <algorithm>
 #include "Searcher.h"
 
 
 template <class T>
 class BreadthFirstSearch: public Searcher<T> {
 
-    virtual string search (Searchable<T>* searchable);
+    virtual vector<State<T>*> search (Searchable<T>* searchable);
 
     virtual int getNumberOfNodesEvaluated(){
         return 0;
@@ -19,7 +20,7 @@ class BreadthFirstSearch: public Searcher<T> {
 
 
 template<class T>
-string BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
+vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
     //bool *visited = new bool[V];
     //for(int i = 0; i < V; i++)
     //  visited[i] = false;
@@ -60,13 +61,19 @@ string BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
             }
         }
     }
-    vector<State<T>> returnVal;
-    State<T> currentState = searchable->getGoalState();
-    State<T> beginState = searchable->getInitialState();
-    while (!beginState.Equal(currentState)){
+    //get the lest from the goal to begin
+    vector<State<T>*> returnVal;
+    State<T>* currentState = searchable->getGoalState();
+    State<T>* beginState = searchable->getInitialState();
+    while (!beginState->Equal(currentState)){
         returnVal.insert(currentState);
-        currentState = currentState.getDad();
+        currentState = currentState->getDad();
     }
+    returnVal.insert(searchable->getInitialState());
+
+    std::reverse(returnVal.begin(),returnVal.end());
+
+    return returnVal;
 
 
 

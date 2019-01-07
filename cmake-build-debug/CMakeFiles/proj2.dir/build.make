@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/tehila/Downloads/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/reut/Downloads/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/tehila/Downloads/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/reut/Downloads/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tehila/CLionProjects/part2New
+CMAKE_SOURCE_DIR = /home/reut/CLionProjects/part2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tehila/CLionProjects/part2New/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reut/CLionProjects/part2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proj2.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/proj2.dir/flags.make
 
 CMakeFiles/proj2.dir/main.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proj2.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/main.cpp.o -c /home/tehila/CLionProjects/part2New/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proj2.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/main.cpp.o -c /home/reut/CLionProjects/part2/main.cpp
 
 CMakeFiles/proj2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/main.cpp > CMakeFiles/proj2.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/main.cpp > CMakeFiles/proj2.dir/main.cpp.i
 
 CMakeFiles/proj2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/main.cpp -o CMakeFiles/proj2.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/main.cpp -o CMakeFiles/proj2.dir/main.cpp.s
 
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proj2.dir/MySerialServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MySerialServer.cpp.o -c /home/tehila/CLionProjects/part2New/MySerialServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proj2.dir/MySerialServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MySerialServer.cpp.o -c /home/reut/CLionProjects/part2/MySerialServer.cpp
 
 CMakeFiles/proj2.dir/MySerialServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/MySerialServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/MySerialServer.cpp > CMakeFiles/proj2.dir/MySerialServer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/MySerialServer.cpp > CMakeFiles/proj2.dir/MySerialServer.cpp.i
 
 CMakeFiles/proj2.dir/MySerialServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/MySerialServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/MySerialServer.cpp -o CMakeFiles/proj2.dir/MySerialServer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/MySerialServer.cpp -o CMakeFiles/proj2.dir/MySerialServer.cpp.s
 
 CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o -c /home/tehila/CLionProjects/part2New/MyTestClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o -c /home/reut/CLionProjects/part2/MyTestClientHandler.cpp
 
 CMakeFiles/proj2.dir/MyTestClientHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/MyTestClientHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/MyTestClientHandler.cpp > CMakeFiles/proj2.dir/MyTestClientHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/MyTestClientHandler.cpp > CMakeFiles/proj2.dir/MyTestClientHandler.cpp.i
 
 CMakeFiles/proj2.dir/MyTestClientHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/MyTestClientHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/MyTestClientHandler.cpp -o CMakeFiles/proj2.dir/MyTestClientHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/MyTestClientHandler.cpp -o CMakeFiles/proj2.dir/MyTestClientHandler.cpp.s
 
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proj2.dir/FileCacheManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/FileCacheManager.cpp.o -c /home/tehila/CLionProjects/part2New/FileCacheManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proj2.dir/FileCacheManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/FileCacheManager.cpp.o -c /home/reut/CLionProjects/part2/FileCacheManager.cpp
 
 CMakeFiles/proj2.dir/FileCacheManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/FileCacheManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/FileCacheManager.cpp > CMakeFiles/proj2.dir/FileCacheManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/FileCacheManager.cpp > CMakeFiles/proj2.dir/FileCacheManager.cpp.i
 
 CMakeFiles/proj2.dir/FileCacheManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/FileCacheManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/FileCacheManager.cpp -o CMakeFiles/proj2.dir/FileCacheManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/FileCacheManager.cpp -o CMakeFiles/proj2.dir/FileCacheManager.cpp.s
 
 CMakeFiles/proj2.dir/StringReverser.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/StringReverser.cpp.o: ../StringReverser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/proj2.dir/StringReverser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/StringReverser.cpp.o -c /home/tehila/CLionProjects/part2New/StringReverser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/proj2.dir/StringReverser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/StringReverser.cpp.o -c /home/reut/CLionProjects/part2/StringReverser.cpp
 
 CMakeFiles/proj2.dir/StringReverser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/StringReverser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/StringReverser.cpp > CMakeFiles/proj2.dir/StringReverser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/StringReverser.cpp > CMakeFiles/proj2.dir/StringReverser.cpp.i
 
 CMakeFiles/proj2.dir/StringReverser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/StringReverser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/StringReverser.cpp -o CMakeFiles/proj2.dir/StringReverser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/StringReverser.cpp -o CMakeFiles/proj2.dir/StringReverser.cpp.s
 
 CMakeFiles/proj2.dir/SocketWrite.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../SocketWrite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/proj2.dir/SocketWrite.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/SocketWrite.cpp.o -c /home/tehila/CLionProjects/part2New/SocketWrite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/proj2.dir/SocketWrite.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/SocketWrite.cpp.o -c /home/reut/CLionProjects/part2/SocketWrite.cpp
 
 CMakeFiles/proj2.dir/SocketWrite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/SocketWrite.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/SocketWrite.cpp > CMakeFiles/proj2.dir/SocketWrite.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/SocketWrite.cpp > CMakeFiles/proj2.dir/SocketWrite.cpp.i
 
 CMakeFiles/proj2.dir/SocketWrite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/SocketWrite.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/SocketWrite.cpp -o CMakeFiles/proj2.dir/SocketWrite.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/SocketWrite.cpp -o CMakeFiles/proj2.dir/SocketWrite.cpp.s
 
 CMakeFiles/proj2.dir/SocketRead.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/SocketRead.cpp.o: ../SocketRead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/proj2.dir/SocketRead.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/SocketRead.cpp.o -c /home/tehila/CLionProjects/part2New/SocketRead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/proj2.dir/SocketRead.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/SocketRead.cpp.o -c /home/reut/CLionProjects/part2/SocketRead.cpp
 
 CMakeFiles/proj2.dir/SocketRead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/SocketRead.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/SocketRead.cpp > CMakeFiles/proj2.dir/SocketRead.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/SocketRead.cpp > CMakeFiles/proj2.dir/SocketRead.cpp.i
 
 CMakeFiles/proj2.dir/SocketRead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/SocketRead.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/SocketRead.cpp -o CMakeFiles/proj2.dir/SocketRead.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/SocketRead.cpp -o CMakeFiles/proj2.dir/SocketRead.cpp.s
 
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/proj2.dir/MyClientHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MyClientHandler.cpp.o -c /home/tehila/CLionProjects/part2New/MyClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/proj2.dir/MyClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/MyClientHandler.cpp.o -c /home/reut/CLionProjects/part2/MyClientHandler.cpp
 
 CMakeFiles/proj2.dir/MyClientHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/MyClientHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/MyClientHandler.cpp > CMakeFiles/proj2.dir/MyClientHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/MyClientHandler.cpp > CMakeFiles/proj2.dir/MyClientHandler.cpp.i
 
 CMakeFiles/proj2.dir/MyClientHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/MyClientHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/MyClientHandler.cpp -o CMakeFiles/proj2.dir/MyClientHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/MyClientHandler.cpp -o CMakeFiles/proj2.dir/MyClientHandler.cpp.s
 
 CMakeFiles/proj2.dir/Test.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/Test.cpp.o: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/proj2.dir/Test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/Test.cpp.o -c /home/tehila/CLionProjects/part2New/Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/proj2.dir/Test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/Test.cpp.o -c /home/reut/CLionProjects/part2/Test.cpp
 
 CMakeFiles/proj2.dir/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/Test.cpp > CMakeFiles/proj2.dir/Test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/Test.cpp > CMakeFiles/proj2.dir/Test.cpp.i
 
 CMakeFiles/proj2.dir/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/Test.cpp -o CMakeFiles/proj2.dir/Test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/Test.cpp -o CMakeFiles/proj2.dir/Test.cpp.s
 
 CMakeFiles/proj2.dir/State.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/State.cpp.o: ../State.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/proj2.dir/State.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/State.cpp.o -c /home/tehila/CLionProjects/part2New/State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/proj2.dir/State.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/State.cpp.o -c /home/reut/CLionProjects/part2/State.cpp
 
 CMakeFiles/proj2.dir/State.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/State.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/State.cpp > CMakeFiles/proj2.dir/State.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/State.cpp > CMakeFiles/proj2.dir/State.cpp.i
 
 CMakeFiles/proj2.dir/State.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/State.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/State.cpp -o CMakeFiles/proj2.dir/State.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/State.cpp -o CMakeFiles/proj2.dir/State.cpp.s
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o: CMakeFiles/proj2.dir/flags.make
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o: ../BreadthFirstSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o -c /home/tehila/CLionProjects/part2New/BreadthFirstSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o -c /home/reut/CLionProjects/part2/BreadthFirstSearch.cpp
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tehila/CLionProjects/part2New/BreadthFirstSearch.cpp > CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reut/CLionProjects/part2/BreadthFirstSearch.cpp > CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.i
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tehila/CLionProjects/part2New/BreadthFirstSearch.cpp -o CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reut/CLionProjects/part2/BreadthFirstSearch.cpp -o CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s
 
 # Object files for target proj2
 proj2_OBJECTS = \
@@ -230,7 +230,7 @@ proj2: CMakeFiles/proj2.dir/State.cpp.o
 proj2: CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o
 proj2: CMakeFiles/proj2.dir/build.make
 proj2: CMakeFiles/proj2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable proj2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable proj2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/proj2.dir/clean:
 .PHONY : CMakeFiles/proj2.dir/clean
 
 CMakeFiles/proj2.dir/depend:
-	cd /home/tehila/CLionProjects/part2New/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tehila/CLionProjects/part2New /home/tehila/CLionProjects/part2New /home/tehila/CLionProjects/part2New/cmake-build-debug /home/tehila/CLionProjects/part2New/cmake-build-debug /home/tehila/CLionProjects/part2New/cmake-build-debug/CMakeFiles/proj2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reut/CLionProjects/part2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reut/CLionProjects/part2 /home/reut/CLionProjects/part2 /home/reut/CLionProjects/part2/cmake-build-debug /home/reut/CLionProjects/part2/cmake-build-debug /home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/proj2.dir/depend
 
