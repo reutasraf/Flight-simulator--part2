@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="proj2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/reut/CLionProjects/proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/reut/CLionProjects/proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/reut/CLionProjects/proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj2">
+				<Option output="/home/reut/CLionProjects/proj2/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reut/CLionProjects/proj2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proj2/fast">
+				<Option output="/home/reut/CLionProjects/proj2/cmake-build-debug/proj2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reut/CLionProjects/proj2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 proj2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reut/CLionProjects/proj2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/reut/CLionProjects/proj2/BreadthFirstSearch.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/BreadthFirstSearch.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/ChachManager.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/ClientHandler.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/FileCacheManager.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/FileCacheManager.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/IStreamReader.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MyClientHandler.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MyClientHandler.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MySerialServer.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MySerialServer.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MyTestClientHandler.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/MyTestClientHandler.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/OStreamWriter.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Searchable.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Searcher.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Server.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/SocketRead.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/SocketRead.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/SocketWrite.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/SocketWrite.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Solver.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/State.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/State.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/StringReverser.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/StringReverser.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Test.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/Test.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/main.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/proj2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

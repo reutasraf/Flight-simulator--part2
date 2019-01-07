@@ -1,0 +1,30 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/reut/CLionProjects/proj2/BreadthFirstSearch.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
+  "/home/reut/CLionProjects/proj2/FileCacheManager.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/FileCacheManager.cpp.o"
+  "/home/reut/CLionProjects/proj2/MyClientHandler.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/MyClientHandler.cpp.o"
+  "/home/reut/CLionProjects/proj2/MySerialServer.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/MySerialServer.cpp.o"
+  "/home/reut/CLionProjects/proj2/MyTestClientHandler.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o"
+  "/home/reut/CLionProjects/proj2/SocketRead.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/SocketRead.cpp.o"
+  "/home/reut/CLionProjects/proj2/SocketWrite.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/SocketWrite.cpp.o"
+  "/home/reut/CLionProjects/proj2/State.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/State.cpp.o"
+  "/home/reut/CLionProjects/proj2/StringReverser.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/StringReverser.cpp.o"
+  "/home/reut/CLionProjects/proj2/Test.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/Test.cpp.o"
+  "/home/reut/CLionProjects/proj2/main.cpp" "/home/reut/CLionProjects/proj2/cmake-build-debug/CMakeFiles/proj2.dir/main.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
