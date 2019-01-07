@@ -17,8 +17,8 @@ public:
         this->state = state;
         this->visited = false;
     }
-    bool Equal(T state1){
-        return (this->state==state1);
+    bool Equal(State state1){
+        return (this->state==state1.state);
     }
     void setCameFrom(State<T>* dad )    {
         this->cameFrom = dad;
@@ -29,6 +29,10 @@ public:
     bool ifVisited(){
         return this->visited;
     }
+    State<T> getDad(){
+        return this->cameFrom;
+    }
+
 };
 
 

@@ -42,6 +42,9 @@ string BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
         state = queue.front();
         queue.pop_front();
 
+        if(searchable->getGoalState().Equal(state)){
+            break;
+        }
         // Get all adjacent vertices of the dequeued
         // vertex s. If a adjacent has not been visited,
         // then mark it visited and enqueue it
@@ -57,6 +60,16 @@ string BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
             }
         }
     }
+    vector<State<T>> returnVal;
+    State<T> currentState = searchable->getGoalState();
+    State<T> beginState = searchable->getInitialState();
+    while (!beginState.Equal(currentState)){
+        returnVal.insert(currentState);
+        currentState = currentState.getDad();
+    }
+
+
+
 }
 
 
