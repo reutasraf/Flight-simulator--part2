@@ -7,9 +7,11 @@
 void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) {
 
     string solution;
-    vector<vector<double>> info;
+    vector<vector<string>> info;
     info = setInformation(input);
     //the solution is saved already
+
+
     if(this->cm->IsSolutionSaved(info)){
         output->writeLine(this->cm->getSolution(info));
         return;
@@ -22,7 +24,7 @@ void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) 
 
 }
 
-vector<vector<double>> MyClientHandler::setInformation(IStreamReader *input) {
+vector<vector<string>> MyClientHandler::setInformation(IStreamReader *input) {
     vector<vector<double>> info;
     string line;
     string solution;
@@ -40,10 +42,10 @@ vector<vector<double>> MyClientHandler::setInformation(IStreamReader *input) {
 
 }
 
-vector<vector<double >> MyClientHandler:: lexer(string longString){
+vector<vector<string >> MyClientHandler:: lexer(string longString){
 
-    vector<vector<double >> returnVal;
-    vector<double > listOfterLex;
+    vector<vector<string >> returnVal;
+    vector<string > listOfterLex;
     string enterTolist = "";
     regex number("[0-9.]*");
     smatch m;
@@ -58,7 +60,7 @@ vector<vector<double >> MyClientHandler:: lexer(string longString){
             for (unsigned i = 0; i < m.size(); ++i) {
                 enterTolist += enterTolist + m.str(i);
             }
-            listOfterLex.push_back(stod(enterTolist));
+            listOfterLex.push_back(enterTolist);
             longString = longString.substr(enterTolist.size(), longString.size());
             enterTolist = "";
         } else if ((longString[0] >= 65 && longString[0] <= 90) || (longString[0] >= 97 && longString[0] <= 122)) {

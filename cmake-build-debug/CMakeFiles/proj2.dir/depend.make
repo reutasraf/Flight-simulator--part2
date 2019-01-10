@@ -7,6 +7,23 @@ CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
+CMakeFiles/proj2.dir/IndexsMat.cpp.o: ../IndexsMat.cpp
+CMakeFiles/proj2.dir/IndexsMat.cpp.o: ../IndexsMat.h
+
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../Interpreter.h
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../MatrixInter.cpp
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../MatrixInter.h
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../MatrixSearchable.h
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../State.h
+
+CMakeFiles/proj2.dir/MatrixSearchable.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.cpp
+CMakeFiles/proj2.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.h
+CMakeFiles/proj2.dir/MatrixSearchable.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/MatrixSearchable.cpp.o: ../State.h
+
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../ClientHandler.h
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../IStreamReader.h
@@ -14,6 +31,15 @@ CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../MyClientHandler.h
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../OStreamWriter.h
 CMakeFiles/proj2.dir/MyClientHandler.cpp.o: ../Solver.h
+
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../IStreamReader.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../OStreamWriter.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../Server.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../SocketRead.h
+CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../SocketWrite.h
 
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: ../IStreamReader.h
@@ -40,6 +66,17 @@ CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../OStreamWriter.h
 CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../SocketWrite.cpp
 CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../SocketWrite.h
 
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../Interpreter.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../MatrixInter.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../MatrixSearchable.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../Searcher.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../SolveSearch.cpp
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../SolveSearch.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../Solver.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../State.h
+
 CMakeFiles/proj2.dir/State.cpp.o: ../State.cpp
 CMakeFiles/proj2.dir/State.cpp.o: ../State.h
 
@@ -60,6 +97,11 @@ CMakeFiles/proj2.dir/Test.cpp.o: ../StringReverser.h
 CMakeFiles/proj2.dir/Test.cpp.o: ../Test.cpp
 CMakeFiles/proj2.dir/Test.cpp.o: ../Test.h
 
+CMakeFiles/proj2.dir/dddd.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/dddd.cpp.o: ../State.h
+CMakeFiles/proj2.dir/dddd.cpp.o: ../dddd.cpp
+CMakeFiles/proj2.dir/dddd.cpp.o: ../dddd.h
+
 CMakeFiles/proj2.dir/main.cpp.o: ../BreadthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ClientHandler.h
@@ -75,5 +117,6 @@ CMakeFiles/proj2.dir/main.cpp.o: ../Solver.h
 CMakeFiles/proj2.dir/main.cpp.o: ../State.h
 CMakeFiles/proj2.dir/main.cpp.o: ../StringReverser.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Test.h
+CMakeFiles/proj2.dir/main.cpp.o: ../dddd.h
 CMakeFiles/proj2.dir/main.cpp.o: ../main.cpp
 

@@ -10,6 +10,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/proj2.dir/Test.cpp.o"
   "CMakeFiles/proj2.dir/State.cpp.o"
   "CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
+  "CMakeFiles/proj2.dir/dddd.cpp.o"
+  "CMakeFiles/proj2.dir/MyParallelServer.cpp.o"
+  "CMakeFiles/proj2.dir/IndexsMat.cpp.o"
+  "CMakeFiles/proj2.dir/MatrixSearchable.cpp.o"
+  "CMakeFiles/proj2.dir/MatrixInter.cpp.o"
+  "CMakeFiles/proj2.dir/SolveSearch.cpp.o"
   "proj2.pdb"
   "proj2"
 )

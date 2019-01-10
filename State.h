@@ -13,12 +13,16 @@ private:
     State<T>* cameFrom;
     bool visited;
 public:
-    State(T state){
+    State(T state, double cost){
         this->state = state;
         this->visited = false;
+        this->cost = cost;
     }
-    bool Equal(State state1){
-        return (this->state==state1.state);
+    T getState(){
+        return this->state;
+    }
+    bool Equal(State* state1){
+        return (this->state==state1->state);
     }
     void setCameFrom(State<T>* dad )    {
         this->cameFrom = dad;
@@ -29,8 +33,11 @@ public:
     bool ifVisited(){
         return this->visited;
     }
-    State<T> getDad(){
+    State<T>* getDad(){
         return this->cameFrom;
+    }
+    double getCost(){
+        return this->cost;
     }
 
 };

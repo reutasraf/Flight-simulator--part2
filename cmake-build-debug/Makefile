@@ -177,6 +177,87 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+IndexsMat.o: IndexsMat.cpp.o
+
+.PHONY : IndexsMat.o
+
+# target to build an object file
+IndexsMat.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.o
+.PHONY : IndexsMat.cpp.o
+
+IndexsMat.i: IndexsMat.cpp.i
+
+.PHONY : IndexsMat.i
+
+# target to preprocess a source file
+IndexsMat.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.i
+.PHONY : IndexsMat.cpp.i
+
+IndexsMat.s: IndexsMat.cpp.s
+
+.PHONY : IndexsMat.s
+
+# target to generate assembly for a file
+IndexsMat.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.s
+.PHONY : IndexsMat.cpp.s
+
+MatrixInter.o: MatrixInter.cpp.o
+
+.PHONY : MatrixInter.o
+
+# target to build an object file
+MatrixInter.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixInter.cpp.o
+.PHONY : MatrixInter.cpp.o
+
+MatrixInter.i: MatrixInter.cpp.i
+
+.PHONY : MatrixInter.i
+
+# target to preprocess a source file
+MatrixInter.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixInter.cpp.i
+.PHONY : MatrixInter.cpp.i
+
+MatrixInter.s: MatrixInter.cpp.s
+
+.PHONY : MatrixInter.s
+
+# target to generate assembly for a file
+MatrixInter.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixInter.cpp.s
+.PHONY : MatrixInter.cpp.s
+
+MatrixSearchable.o: MatrixSearchable.cpp.o
+
+.PHONY : MatrixSearchable.o
+
+# target to build an object file
+MatrixSearchable.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixSearchable.cpp.o
+.PHONY : MatrixSearchable.cpp.o
+
+MatrixSearchable.i: MatrixSearchable.cpp.i
+
+.PHONY : MatrixSearchable.i
+
+# target to preprocess a source file
+MatrixSearchable.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixSearchable.cpp.i
+.PHONY : MatrixSearchable.cpp.i
+
+MatrixSearchable.s: MatrixSearchable.cpp.s
+
+.PHONY : MatrixSearchable.s
+
+# target to generate assembly for a file
+MatrixSearchable.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MatrixSearchable.cpp.s
+.PHONY : MatrixSearchable.cpp.s
+
 MyClientHandler.o: MyClientHandler.cpp.o
 
 .PHONY : MyClientHandler.o
@@ -203,6 +284,33 @@ MyClientHandler.s: MyClientHandler.cpp.s
 MyClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyClientHandler.cpp.s
 .PHONY : MyClientHandler.cpp.s
+
+MyParallelServer.o: MyParallelServer.cpp.o
+
+.PHONY : MyParallelServer.o
+
+# target to build an object file
+MyParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyParallelServer.cpp.o
+.PHONY : MyParallelServer.cpp.o
+
+MyParallelServer.i: MyParallelServer.cpp.i
+
+.PHONY : MyParallelServer.i
+
+# target to preprocess a source file
+MyParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyParallelServer.cpp.i
+.PHONY : MyParallelServer.cpp.i
+
+MyParallelServer.s: MyParallelServer.cpp.s
+
+.PHONY : MyParallelServer.s
+
+# target to generate assembly for a file
+MyParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyParallelServer.cpp.s
+.PHONY : MyParallelServer.cpp.s
 
 MySerialServer.o: MySerialServer.cpp.o
 
@@ -312,6 +420,33 @@ SocketWrite.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SocketWrite.cpp.s
 .PHONY : SocketWrite.cpp.s
 
+SolveSearch.o: SolveSearch.cpp.o
+
+.PHONY : SolveSearch.o
+
+# target to build an object file
+SolveSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.o
+.PHONY : SolveSearch.cpp.o
+
+SolveSearch.i: SolveSearch.cpp.i
+
+.PHONY : SolveSearch.i
+
+# target to preprocess a source file
+SolveSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.i
+.PHONY : SolveSearch.cpp.i
+
+SolveSearch.s: SolveSearch.cpp.s
+
+.PHONY : SolveSearch.s
+
+# target to generate assembly for a file
+SolveSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.s
+.PHONY : SolveSearch.cpp.s
+
 State.o: State.cpp.o
 
 .PHONY : State.o
@@ -393,6 +528,33 @@ Test.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Test.cpp.s
 .PHONY : Test.cpp.s
 
+dddd.o: dddd.cpp.o
+
+.PHONY : dddd.o
+
+# target to build an object file
+dddd.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.o
+.PHONY : dddd.cpp.o
+
+dddd.i: dddd.cpp.i
+
+.PHONY : dddd.i
+
+# target to preprocess a source file
+dddd.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.i
+.PHONY : dddd.cpp.i
+
+dddd.s: dddd.cpp.s
+
+.PHONY : dddd.s
+
+# target to generate assembly for a file
+dddd.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.s
+.PHONY : dddd.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -435,9 +597,21 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... IndexsMat.o"
+	@echo "... IndexsMat.i"
+	@echo "... IndexsMat.s"
+	@echo "... MatrixInter.o"
+	@echo "... MatrixInter.i"
+	@echo "... MatrixInter.s"
+	@echo "... MatrixSearchable.o"
+	@echo "... MatrixSearchable.i"
+	@echo "... MatrixSearchable.s"
 	@echo "... MyClientHandler.o"
 	@echo "... MyClientHandler.i"
 	@echo "... MyClientHandler.s"
+	@echo "... MyParallelServer.o"
+	@echo "... MyParallelServer.i"
+	@echo "... MyParallelServer.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
@@ -450,6 +624,9 @@ help:
 	@echo "... SocketWrite.o"
 	@echo "... SocketWrite.i"
 	@echo "... SocketWrite.s"
+	@echo "... SolveSearch.o"
+	@echo "... SolveSearch.i"
+	@echo "... SolveSearch.s"
 	@echo "... State.o"
 	@echo "... State.i"
 	@echo "... State.s"
@@ -459,6 +636,9 @@ help:
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"
+	@echo "... dddd.o"
+	@echo "... dddd.i"
+	@echo "... dddd.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -105,10 +105,37 @@
 		<Unit filename="/home/reut/CLionProjects/part2/IStreamReader.h">
 			<Option target="proj2"/>
 		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/IndexsMat.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/IndexsMat.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/Interpreter.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MatrixInter.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MatrixInter.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MatrixSearchable.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MatrixSearchable.h">
+			<Option target="proj2"/>
+		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MyClientHandler.cpp">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MyClientHandler.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MyParallelServer.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MyParallelServer.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.cpp">
@@ -147,6 +174,12 @@
 		<Unit filename="/home/reut/CLionProjects/part2/SocketWrite.h">
 			<Option target="proj2"/>
 		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/SolveSearch.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/SolveSearch.h">
+			<Option target="proj2"/>
+		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/Solver.h">
 			<Option target="proj2"/>
 		</Unit>
@@ -166,6 +199,12 @@
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/Test.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/dddd.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/dddd.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/main.cpp">

@@ -17,12 +17,12 @@
 #include <regex>
 class MyClientHandler:public ClientHandler{
 private:
-    Solver<vector<vector<double>>,string>* solver;
-    ChachManager<vector<vector<double>>,string>* cm;
+    Solver<vector<vector<string>>,string>* solver;
+    ChachManager<vector<vector<string>>,string>* cm;
 public:
-    vector<vector<double>> setInformation(IStreamReader *input);
+    vector<vector<string>> setInformation(IStreamReader *input);
     virtual void  handleClient(IStreamReader* input,OStreamWriter* output);
-    vector<vector<double >> lexer(string longString);
+    vector<vector<string >> lexer(string longString);
 };
 
 
