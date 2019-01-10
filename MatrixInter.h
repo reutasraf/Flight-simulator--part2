@@ -12,9 +12,9 @@
 #include "State.h"
 
 using namespace std;
-class MatrixInter: public Interpreter<vector<vector<string>>,MatrixSearchable>  {
+class MatrixInter: public Interpreter<vector<vector<string>>,Searchable<IndexsMat>*>  {
 public:
-    virtual MatrixSearchable interpretation(vector<vector<string>>);
+    virtual Searchable<IndexsMat>* interpretation(vector<vector<string>>);
 
 };
 

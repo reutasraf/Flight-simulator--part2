@@ -3,6 +3,12 @@
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o: ../BreadthFirstSearch.cpp
 
+CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o: ../DepthFirstSearch.cpp
+CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o: ../DepthFirstSearch.h
+CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o: ../Searcher.h
+CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o: ../State.h
+
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
@@ -105,14 +111,20 @@ CMakeFiles/proj2.dir/dddd.cpp.o: ../dddd.h
 CMakeFiles/proj2.dir/main.cpp.o: ../BreadthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ClientHandler.h
+CMakeFiles/proj2.dir/main.cpp.o: ../DepthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../IStreamReader.h
+CMakeFiles/proj2.dir/main.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/main.cpp.o: ../Interpreter.h
+CMakeFiles/proj2.dir/main.cpp.o: ../MatrixInter.h
+CMakeFiles/proj2.dir/main.cpp.o: ../MatrixSearchable.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../OStreamWriter.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Server.h
+CMakeFiles/proj2.dir/main.cpp.o: ../SolveSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Solver.h
 CMakeFiles/proj2.dir/main.cpp.o: ../State.h
 CMakeFiles/proj2.dir/main.cpp.o: ../StringReverser.h

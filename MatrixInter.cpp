@@ -5,7 +5,7 @@
 #include "MatrixInter.h"
 #include "IndexsMat.h"
 
-MatrixSearchable MatrixInter::interpretation(vector<vector<string>> input) {
+Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input) {
 
     vector<vector<State<double >*>> myMatrix;
     vector<vector<State<IndexsMat>*>> matrix;
@@ -26,18 +26,19 @@ MatrixSearchable MatrixInter::interpretation(vector<vector<string>> input) {
     }
      */
 
-    MatrixSearchable* matrixSearchable=new MatrixSearchable;
+    auto * matrixSearchable=new MatrixSearchable();
     vector<string> end = input.back();
     input.pop_back();
     vector<string> start = input.back();
     input.pop_back();
-    for(int i  = 0;i<input.size();++i){
+    int size = input.size();
+    for(int i  = 0;i<size;++i){
         vector<State<IndexsMat >*> vec;
-        for(int j  = 0;j<input[i].size();++i){
+        for(int j  = 0;j<input[i].size();++j){
             double val = stod(input[i][j]);
             IndexsMat indexsMat;
-            indexsMat.setColumn(i);
-            indexsMat.setRow(j);
+            indexsMat.setColumn(j);
+            indexsMat.setRow(i);
             auto * state = new State<IndexsMat>(indexsMat,val);
             vec.push_back(state);
             if((i == stoi(start[0])) && (j==stoi(start[1]))){
@@ -51,6 +52,7 @@ MatrixSearchable MatrixInter::interpretation(vector<vector<string>> input) {
     }
 
     matrixSearchable->setMatrix(matrix);
+    return matrixSearchable;
     //TODO
 
 

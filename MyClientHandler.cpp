@@ -65,7 +65,7 @@ vector<vector<string >> MyClientHandler:: lexer(string longString){
             enterTolist = "";
         } else if ((longString[0] >= 65 && longString[0] <= 90) || (longString[0] >= 97 && longString[0] <= 122)) {
             //listOfterLex.push_back(longString);
-
+            return  returnVal;
         } else {
             enterTolist = "";
             //listOfterLex.clear();

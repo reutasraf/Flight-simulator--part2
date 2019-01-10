@@ -96,6 +96,12 @@
 		<Unit filename="/home/reut/CLionProjects/part2/ClientHandler.h">
 			<Option target="proj2"/>
 		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/DepthFirstSearch.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/DepthFirstSearch.h">
+			<Option target="proj2"/>
+		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/FileCacheManager.cpp">
 			<Option target="proj2"/>
 		</Unit>

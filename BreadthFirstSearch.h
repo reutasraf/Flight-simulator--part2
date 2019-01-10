@@ -10,11 +10,13 @@
 using namespace std;
 template <class T>
 class BreadthFirstSearch: public Searcher<T> {
+private:
+    int nodesEvaluated=0;
 public:
     virtual vector<State<T>*> search (Searchable<T>* searchable);
 
     virtual int getNumberOfNodesEvaluated(){
-        return 0;
+        return this->nodesEvaluated;
     }
 };
 
@@ -53,7 +55,7 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
         for (i = adj.begin(); i != adj.end(); ++i)
         {
             State<T>* nei=(*i);
-            if (nei->ifVisited())
+            if (!(nei->ifVisited()))
             {
                 nei->setVisited();
                 nei->setCameFrom(state);
@@ -61,7 +63,7 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
             }
         }
     }
-    //get the lest from the goal to begin
+    //get the nodes from the goal to begin
 
     vector<State<T>*> returnVal;
     State<T>* currentState = searchable->getGoalState();
@@ -74,12 +76,14 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
 
     std::reverse(returnVal.begin(),returnVal.end());
 
+    //save number of nodes that evaluated
+    this->nodesEvaluated=returnVal.size();
+
     return returnVal;
 
 
 
 }
-
 
 
 #endif //PROJ2_BREADTHFIRSTSEARCH_H

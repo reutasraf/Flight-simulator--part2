@@ -30,6 +30,9 @@ public:
     int getRow(){
         return this->row;
     }
+    bool operator==(IndexsMat indexsMat) {
+        return row == indexsMat.getRow() && column == indexsMat.getColumn();
+    }
 
 };
 

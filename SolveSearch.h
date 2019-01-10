@@ -9,21 +9,21 @@
 #include "Searchable.h"
 #include "MatrixInter.h"
 #include "Searcher.h"
-template <class T ,class Solution>
-class SolveSearch :public Solver<class Searchable<T> , Solution>{
+template <class T,class Solution>
+class SolveSearch :public Solver< vector<vector<string>>, Solution>{
 private:
-    Searcher<T> search;
-    MatrixInter inter;
+    Searcher<T>* search;
+    MatrixInter* inter;
 public:
 
-    SolveSearch(Searcher<T> searcher,MatrixInter matrixInter){
+    SolveSearch(Searcher<T>* searcher,MatrixInter* matrixInter){
         this->search = searcher;
         this->inter = matrixInter;
     }
 
     virtual Solution solve(vector<vector<string>> information){
-        Searchable<T> matrix=inter.interpretation(information);
-        vector<State<double >> vector1=search.search(matrix);
+        Searchable<T>* matrix=inter->interpretation(information);
+        vector<State<IndexsMat >*> vector1=search->search(matrix);
     }
 
 };

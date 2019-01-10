@@ -150,6 +150,33 @@ BreadthFirstSearch.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s
 .PHONY : BreadthFirstSearch.cpp.s
 
+DepthFirstSearch.o: DepthFirstSearch.cpp.o
+
+.PHONY : DepthFirstSearch.o
+
+# target to build an object file
+DepthFirstSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o
+.PHONY : DepthFirstSearch.cpp.o
+
+DepthFirstSearch.i: DepthFirstSearch.cpp.i
+
+.PHONY : DepthFirstSearch.i
+
+# target to preprocess a source file
+DepthFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.i
+.PHONY : DepthFirstSearch.cpp.i
+
+DepthFirstSearch.s: DepthFirstSearch.cpp.s
+
+.PHONY : DepthFirstSearch.s
+
+# target to generate assembly for a file
+DepthFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.s
+.PHONY : DepthFirstSearch.cpp.s
+
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -594,6 +621,9 @@ help:
 	@echo "... BreadthFirstSearch.o"
 	@echo "... BreadthFirstSearch.i"
 	@echo "... BreadthFirstSearch.s"
+	@echo "... DepthFirstSearch.o"
+	@echo "... DepthFirstSearch.i"
+	@echo "... DepthFirstSearch.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"

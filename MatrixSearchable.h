@@ -6,7 +6,7 @@
 #include "IndexsMat.h"
 using namespace std;
 //template <class T>
-class MatrixSearchable : public  Searchable<IndexsMat>{
+class MatrixSearchable : public Searchable<IndexsMat>{
     State<IndexsMat>* start;
     State<IndexsMat>* end;
     vector<vector<State<IndexsMat>*>> matrix;

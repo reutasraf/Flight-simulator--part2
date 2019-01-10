@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/reut/CLionProjects/part2/BreadthFirstSearch.cpp" "/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
+  "/home/reut/CLionProjects/part2/DepthFirstSearch.cpp" "/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o"
   "/home/reut/CLionProjects/part2/FileCacheManager.cpp" "/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/FileCacheManager.cpp.o"
   "/home/reut/CLionProjects/part2/IndexsMat.cpp" "/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/IndexsMat.cpp.o"
   "/home/reut/CLionProjects/part2/MatrixInter.cpp" "/home/reut/CLionProjects/part2/cmake-build-debug/CMakeFiles/proj2.dir/MatrixInter.cpp.o"
