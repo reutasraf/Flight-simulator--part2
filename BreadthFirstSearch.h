@@ -68,6 +68,10 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
     vector<State<T>*> returnVal;
     State<T>* currentState = searchable->getGoalState();
     State<T>* beginState = searchable->getInitialState();
+    if(currentState->getDad()==NULL){
+        return returnVal;
+    }
+
     while (!beginState->Equal(currentState)){
         returnVal.push_back(currentState);
         currentState = currentState->getDad();

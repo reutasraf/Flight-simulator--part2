@@ -54,6 +54,8 @@ int MySerialServer::open(int port, ClientHandler* clientHandler) {
     params->shouldStop = &(this->shouldStop);
     params->ch = clientHandler;
     this->OpenThread(params);
+    string x;
+    cin>>x;
 
 
     //this->time=time;

@@ -16,6 +16,12 @@ CMakeFiles/proj2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 CMakeFiles/proj2.dir/IndexsMat.cpp.o: ../IndexsMat.cpp
 CMakeFiles/proj2.dir/IndexsMat.cpp.o: ../IndexsMat.h
 
+CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../InterpaterAnswerMatrix.cpp
+CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../InterpaterAnswerMatrix.h
+CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../Interpreter.h
+CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../State.h
+
 CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../IndexsMat.h
 CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../Interpreter.h
 CMakeFiles/proj2.dir/MatrixInter.cpp.o: ../MatrixInter.cpp
@@ -73,6 +79,7 @@ CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../SocketWrite.cpp
 CMakeFiles/proj2.dir/SocketWrite.cpp.o: ../SocketWrite.h
 
 CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../InterpaterAnswerMatrix.h
 CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../Interpreter.h
 CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../MatrixInter.h
 CMakeFiles/proj2.dir/SolveSearch.cpp.o: ../MatrixSearchable.h
@@ -115,15 +122,19 @@ CMakeFiles/proj2.dir/main.cpp.o: ../DepthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../IStreamReader.h
 CMakeFiles/proj2.dir/main.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/main.cpp.o: ../InterpaterAnswerMatrix.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Interpreter.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MatrixInter.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MatrixSearchable.h
+CMakeFiles/proj2.dir/main.cpp.o: ../MyClientHandler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../OStreamWriter.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Server.h
+CMakeFiles/proj2.dir/main.cpp.o: ../SocketRead.h
+CMakeFiles/proj2.dir/main.cpp.o: ../SocketWrite.h
 CMakeFiles/proj2.dir/main.cpp.o: ../SolveSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../Solver.h
 CMakeFiles/proj2.dir/main.cpp.o: ../State.h

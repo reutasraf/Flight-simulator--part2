@@ -7,24 +7,33 @@
 void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) {
 
     string solution;
+    string allLine;
     vector<vector<string>> info;
-    info = setInformation(input);
+    allLine = setInformation(input);
+    string toLex = allLine;
+    replace(allLine.begin(),allLine.end(),'\n','$');
     //the solution is saved already
-
-
-    if(this->cm->IsSolutionSaved(info)){
-        output->writeLine(this->cm->getSolution(info));
-        return;
+    if(allLine.back()=='$'){
+        allLine.pop_back();
     }
 
+    if(this->cm->IsSolutionSaved(allLine)){
+        output->writeLine(this->cm->getSolution(allLine));
+        return;
+    }
+    info=this->lexer(toLex);
     solution = solver->solve(info);
     //the solution isn't saved already
-    this->cm->saveSolution(info,solution);
-    output->writeLine(this->cm->getSolution(info));
+
+    this->cm->saveSolution(allLine,solution);
+
+
+    output->writeLine(this->cm->getSolution(allLine));
+
 
 }
 
-vector<vector<string>> MyClientHandler::setInformation(IStreamReader *input) {
+string MyClientHandler::setInformation(IStreamReader *input) {
     vector<vector<double>> info;
     string line;
     string solution;
@@ -37,7 +46,7 @@ vector<vector<string>> MyClientHandler::setInformation(IStreamReader *input) {
             continueLoop = false;
         }
     }
-    return lexer(allLine);
+    return allLine;
 
 
 }

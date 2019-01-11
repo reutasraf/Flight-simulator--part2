@@ -1,6 +1,3 @@
-//
-// Created by reut on 02/01/19.
-//
 
 #ifndef PROJ2_SOLVER_H
 #define PROJ2_SOLVER_H

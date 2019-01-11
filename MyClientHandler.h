@@ -1,6 +1,3 @@
-//
-// Created by reut on 03/01/19.
-//
 
 #ifndef PROJ2_MYCLIENTHANDLER_H
 #define PROJ2_MYCLIENTHANDLER_H
@@ -18,9 +15,13 @@
 class MyClientHandler:public ClientHandler{
 private:
     Solver<vector<vector<string>>,string>* solver;
-    ChachManager<vector<vector<string>>,string>* cm;
+    ChachManager<string,string>* cm;
 public:
-    vector<vector<string>> setInformation(IStreamReader *input);
+    MyClientHandler(Solver<vector<vector<string>>,string>* solver,ChachManager<string,string>* cm){
+        this->solver =solver;
+        this->cm = cm;
+    }
+    string setInformation(IStreamReader *input);
     virtual void  handleClient(IStreamReader* input,OStreamWriter* output);
     vector<vector<string >> lexer(string longString);
 };

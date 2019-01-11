@@ -70,6 +70,9 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
     vector<State<T>*> vecNodes;
     State<T>* goalState = searchable->getGoalState();
     State<T>* beginState = searchable->getInitialState();
+    if(goalState->getDad()==NULL){
+        return vecNodes;
+    }
     while (!beginState->Equal(goalState)){
         vecNodes.push_back(goalState);
         goalState = goalState->getDad();

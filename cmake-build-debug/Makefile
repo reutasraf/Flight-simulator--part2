@@ -231,6 +231,33 @@ IndexsMat.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.s
 .PHONY : IndexsMat.cpp.s
 
+InterpaterAnswerMatrix.o: InterpaterAnswerMatrix.cpp.o
+
+.PHONY : InterpaterAnswerMatrix.o
+
+# target to build an object file
+InterpaterAnswerMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o
+.PHONY : InterpaterAnswerMatrix.cpp.o
+
+InterpaterAnswerMatrix.i: InterpaterAnswerMatrix.cpp.i
+
+.PHONY : InterpaterAnswerMatrix.i
+
+# target to preprocess a source file
+InterpaterAnswerMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.i
+.PHONY : InterpaterAnswerMatrix.cpp.i
+
+InterpaterAnswerMatrix.s: InterpaterAnswerMatrix.cpp.s
+
+.PHONY : InterpaterAnswerMatrix.s
+
+# target to generate assembly for a file
+InterpaterAnswerMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.s
+.PHONY : InterpaterAnswerMatrix.cpp.s
+
 MatrixInter.o: MatrixInter.cpp.o
 
 .PHONY : MatrixInter.o
@@ -630,6 +657,9 @@ help:
 	@echo "... IndexsMat.o"
 	@echo "... IndexsMat.i"
 	@echo "... IndexsMat.s"
+	@echo "... InterpaterAnswerMatrix.o"
+	@echo "... InterpaterAnswerMatrix.i"
+	@echo "... InterpaterAnswerMatrix.s"
 	@echo "... MatrixInter.o"
 	@echo "... MatrixInter.i"
 	@echo "... MatrixInter.s"
