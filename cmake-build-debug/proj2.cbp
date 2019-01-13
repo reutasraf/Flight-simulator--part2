@@ -159,6 +159,12 @@
 		<Unit filename="/home/reut/CLionProjects/part2/MyParallelServer.h">
 			<Option target="proj2"/>
 		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MyPriorityQueue.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/MyPriorityQueue.h">
+			<Option target="proj2"/>
+		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.cpp">
 			<Option target="proj2"/>
 		</Unit>

@@ -1,96 +1,112 @@
-//
-// Created by reut on 13/01/19.
-//
+#ifndef PART2_ASTAR_H
+#define PART2_ASTAR_H
 
-#ifndef PROJ2_ASTAR_H
-#define PROJ2_ASTAR_H
+#endif //PART2_ASTAR_H
 
 #include "Searcher.h"
+#include "algorithm"
 using namespace std;
-template <class T>
-class AStar: public Searcher<T>{
-private:
-    int nodesEvaluated;
-public:
-    AStar(){
-        this->nodesEvaluated = 0;
-    }
-    virtual vector<State<T>*> search (Searchable<T>* searchable);
 
-    virtual int getNumberOfNodesEvaluated(){
-        return this->nodesEvaluated;
+template <class T>
+class AStar:public Searcher<T>{
+    int nodeThatEleveted = 0 ;
+    vector<State<T>*> open1;
+    virtual int getNumberOfNodeElevatde(){
+        return this->nodeThatEleveted;
+    }
+
+    vector<State<T>*> tempMyAStar(Searchable<T> *searchable){
+
+        vector<State<T>*> close;
+        State<T>* goal = searchable->getGoalState();
+        State<T>* start = searchable->getInitalState();
+
+
+        double f = abs(start->getState().getRow()-goal->getState().getRow())
+                +abs(start->getState().getColumn()-goal->getState().getColumn());
+
+        start->setPathCost(start->getCost());
+        this->open1.push_back(start);
+
+        while(!this->open1.empty()){
+            State<T>* current = this->lowestVal(goal);
+
+
+            this->nodeThatEleveted++;
+            if(current->Equals(goal)){
+                break;
+            }
+
+            vector<State<T>*> adj = searchable->getAllPossibleStates(current);
+            while (!adj.empty()){
+                State<T>* temp = adj.back();
+                adj.pop_back();
+
+                double pathFromCurrent = current->getPathCost()+temp->getCost();
+                if( find(this->open1.begin(),this->open1.end(),temp)!=this->open1.end()){
+                    if(temp->getPathCost()<pathFromCurrent){
+                        continue;
+                    }
+                }else if(find(close.begin(),close.end(),temp)!=close.end()){
+                    if(temp->getPathCost()<pathFromCurrent) {
+                        continue;
+                    }
+                    close.pop(temp);
+                    open1.push_back(temp);
+                }else{
+                    this->open1.push_back(temp);
+                }
+                temp->setPathCost(pathFromCurrent);
+                temp->setCameFrom(current);
+
+            }
+            close.push_back(current);
+
+        }
+
+        vector<State<T>*> path = this->ThePath(searchable->getGoalState());
+
+        string solution =  searchable->WhereToGo(path);
+        return solution;
+
+    }
+
+    string search(Searchable<T> *searchable) {
+        return this->tempMyAStar(searchable);
+    }
+
+    State<T>* lowestVal(State<T>* goal) {
+        vector<State<T>*> temp;
+
+        State<T>* lowest = open1.back();
+        open1.pop_back();
+
+
+        double huristic = abs(lowest->getI() - goal->getI()) +abs(lowest->getJ() - goal->getJ());
+        double first = huristic + lowest->getPathCost();
+
+        while(!this->open1.empty()){
+            State<T>* state = open1.back();
+            open1.pop_back();
+
+
+            huristic = abs(state->getI() - goal->getI()) +abs(state->getJ() - goal->getJ());
+            double newCost = huristic + state->getPathCost();
+
+            if(newCost<first){
+                temp.push_back(lowest);
+                lowest = state;
+                continue;
+            }
+            temp.push_back(state);
+
+        }
+
+        for(int i = 0 ; i < temp.size();i++){
+            this->open1.push_back(temp[i]);
+        }
+
+        return lowest;
     }
 
 };
-
-
-
-template<class T>
-static string returnBack(Searchable<T>* searchable) {
-    list<State<T>*> queue;
-    State<T>* back = searchable->getGoalState();
-    while (back->getState()->getI()!=searchable->getInitialState()->getState()->getI()
-           || back->getState()->getJ()!=searchable->getInitialState()->getState()->getJ()) {
-        queue.push_front(back);
-        back = back->getCameFrom();
-    }
-    queue.push_front(back);
-    return convertListStateToString(queue);
-}
-
-//string search(Searchable<T>* searchable){
-template<class T>
-vector<State<T>*> search (Searchable<T>* searchable{
-
-    vector<State*> myTempList;
-    State<T>* goal = searchable->getGoalState();
-    State<T>* start = searchable->getInitialState();
-    vector<State<T>*> open;
-    State<T>* current = goal->getState();
-    current->getState().getRow();
-    current->getState().getColumn();
-    open.push_back(start);
-    while(!open.empty()){
-        State<T>* state = open.front();
-        open.pop_front();
-        double stateCost = state.getCost();
-        this->nodesEvaluated++;
-
-        if(state->equals(goal)){
-            this->nodesEvaluated++;
-            return returnBack(searchable);
-        }
-
-        vector<State<T>*> adj = searchable->getAllPossibleStates(state);
-        while (!adj.empty()){
-            State<T>* temp = adj.front();
-            adj.pop_front();
-
-            State<T>* stateTemp = temp->getState();
-
-            double huristic = abs(stateTemp.getState.getRow() - goal.getState().getRow()) +abs(stateTemp->getState().getColomn() - goal.getState().getColumn());
-            double newCost = huristic + state.getCostUntilHere() + temp->getCostUntilHere();
-
-            if (myTempList.find(temp)) {
-                double preCost = temp.getCost();
-                if (newCost < preCost){
-                    temp->setCameFrom(state);
-                    temp.setCostUntilHere(newCost);
-                }
-            } else {
-                open.push_back(temp);
-                temp->setCameFrom(state);
-                myTempList.push_back(temp);
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-
-#endif //PROJ2_ASTAR_H

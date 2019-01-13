@@ -12,12 +12,17 @@ private:
     double cost;
     State<T>* cameFrom;
     bool visited;
+    double shortestPathVal;
 public:
-    State(T state, double cost){
+    State(T state, double cost,double shortestPath){
         this->state = state;
         this->visited = false;
         this->cost = cost;
         this->cameFrom = nullptr;
+        this->shortestPathVal = shortestPath;
+    }
+    double getShortestPathVal(){
+        return shortestPathVal;
     }
 
     T getState(){
@@ -40,6 +45,20 @@ public:
     }
     double getCost(){
         return this->cost;
+    }
+    void setShortestPathVal(double shortestPath) {
+        shortestPathVal = shortestPath;
+    }
+    bool operator < (const State<T>* b){
+        return shortestPathVal < b->getShortestPathVal();
+    }
+
+    bool operator > (State<T> b) const {
+        return shortestPathVal > b.getShortestPathVal();
+    }
+
+    bool operator == (State<T>* b) {
+        return shortestPathVal == b->getShortestPathVal();
     }
 
 };

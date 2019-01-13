@@ -45,6 +45,8 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
         state = queue.front();
         queue.pop_front();
 
+        this->nodesEvaluated++;
+
         if(searchable->getGoalState()->Equal(state)){
             break;
         }
@@ -81,7 +83,7 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
     std::reverse(returnVal.begin(),returnVal.end());
 
     //save number of nodes that evaluated
-    this->nodesEvaluated=returnVal.size();
+    //this->nodesEvaluated=returnVal.size();
 
     return returnVal;
 

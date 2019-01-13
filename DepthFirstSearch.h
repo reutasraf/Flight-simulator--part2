@@ -44,6 +44,8 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
         current = stack.top();
         stack.pop();
 
+        this->nodesEvaluated++;
+
         //if the current not mark as visited already-mark as visited
         if (!current->ifVisited()) {
             current->setVisited();
@@ -81,7 +83,7 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
     std::reverse(vecNodes.begin(),vecNodes.end());
 
     //save number of nodes that evaluated
-    this->nodesEvaluated=vecNodes.size();
+    //this->nodesEvaluated=vecNodes.size();
 
     return vecNodes;
 }
