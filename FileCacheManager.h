@@ -36,6 +36,9 @@ public:
 
 template<class P, class S>
 bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
+    if(mapSolution.size()==0){
+        return false;
+    }
     return mapSolution.count(p) != 0;
 }
 
@@ -78,7 +81,7 @@ template<class P, class S>
 void FileCacheManager<P, S>::writeToFile() {
 
     fstream table;
-    table.open(FILE_NAME, ios::app);
+    table.open(FILE_NAME, std::ofstream::out | std::ofstream::trunc);
     // TODO each problem and solution need toString!!
     for ( auto it = mapSolution.begin(); it != mapSolution.end(); ++it ){
         table << (it->first)<< "$";

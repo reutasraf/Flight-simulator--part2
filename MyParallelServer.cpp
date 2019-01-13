@@ -19,14 +19,17 @@ void* handleClient(void* arg){
     params->ch->handleClient(&socketRead,&socketWriter);
 }
 
+
+
+
+
 void* acceptClients(void* arg)
 {
-    //auto args = static_cast<ParamsToUpdate*>(arg);
     struct dataToSoc* params=(struct dataToSoc*) arg;
-
+    //auto args = static_cast<ParamsToUpdate*>(arg);
     // SocketRead socketRead(args->getSocketClient());
     //SocketWriter socketWriter(args->getSocketClient());
-
+    // pthread_mutex_lock(&args->getMutex());
     //accept(args);
     char *hello = "Hello from server";
     char buffer[256];
@@ -34,20 +37,46 @@ void* acceptClients(void* arg)
     sockaddr_in client_sock;
     int clientSocketVal;
     int clilen = sizeof(client_sock);
-    while (!(params->shouldStop)){
+
+    while (!*(params->shouldStop)){
+
+
+        int new_sock;
+
+        timeval timeout;
+        timeout.tv_sec = 10;
+        timeout.tv_usec = 0;
+
+        setsockopt(params->sockServer, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
         clientSocketVal = ::accept(params->sockServer, (struct sockaddr *) &client_sock, (socklen_t *) &clilen);
-        params->sockClient = clientSocketVal;
-        if (params->sockClient < 0) {
-            throw invalid_argument("connection with client failed");
+        if (clientSocketVal < 0)	{
+            if (errno == EWOULDBLOCK)	{
+                cout << "timeout!" << endl;
+                //  pthread_mutex_unlock(&args->getMutex());
+                return nullptr;
+            }	else	{
+                perror("other error");
+                // pthread_mutex_unlock(&args->getMutex());
+                return nullptr;
+            }
+        }else{
+
+            //clientSocketVal = ::accept(*args->getSocketServer(), (struct sockaddr *) &client_sock, (socklen_t *) &clilen);
+            params->sockClient = clientSocketVal;
+            if (params->sockClient < 0) {
+                throw invalid_argument("connection with client failed");
+            }
+            /* read( clientSocketVal , buffer, 1024);
+             printf("%s\n",buffer );
+             send(clientSocketVal , hello , strlen(hello) , 0 );
+             printf("Hello message sent\n");*/
+            //args->getClient()->handleClient(&socketRead,&socketWriter);
+            pthread_t threadId;
+            pthread_create(&threadId, nullptr, &handleClient, params);
         }
-        int valread = read( clientSocketVal , buffer, 1024);
-        printf("%s\n",buffer );
-        send(clientSocketVal , hello , strlen(hello) , 0 );
-        printf("Hello message sent\n");
-        //args->getClient()->handleClient(&socketRead,&socketWriter);
-        pthread_t threadId;
-        pthread_create(&threadId, nullptr, &handleClient, params);
+
     }
+    //  pthread_mutex_unlock(&args->getMutex());
     return nullptr;
 }
 
@@ -86,11 +115,17 @@ void MyParallelServer:: start(dataToSoc* params){
         perror("ERROR on binding");
         exit(1);
     }
+    //TODO שיננו את המקסימומי
     if (listen(serverSocket, MAX_CONNECTED_CLIENTS) < 0)   {
         perror("listen error");
         exit(1);
     }
     pthread_create(&thread, nullptr, &acceptClients, params);
+
+    pthread_join(thread, nullptr);
+//    pthread_mutex_lock(&paramsToUpdate->getMutex());
+//
+    cout<<"poooooo hadov"<<endl;
 }
 
 

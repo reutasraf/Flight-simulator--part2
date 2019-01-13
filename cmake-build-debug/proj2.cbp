@@ -84,6 +84,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/reut/CLionProjects/part2/AStar.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/BestFirstSearch.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/BestFirstSearch.h">
+			<Option target="proj2"/>
+		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/BreadthFirstSearch.cpp">
 			<Option target="proj2"/>
 		</Unit>

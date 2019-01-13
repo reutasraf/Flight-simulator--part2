@@ -20,7 +20,7 @@ private:
     bool shouldStop;
 public:
     MySerialServer(){
-        this->shouldStop = true;
+        this->shouldStop = false;
     }
     virtual int open(int port,ClientHandler* clientHandler);
     virtual void stop(){

@@ -17,7 +17,9 @@ public:
         this->state = state;
         this->visited = false;
         this->cost = cost;
+        this->cameFrom = nullptr;
     }
+
     T getState(){
         return this->state;
     }

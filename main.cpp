@@ -1,3 +1,5 @@
+/*
+
 #include <iostream>
 #include "Test.h"
 #include "BreadthFirstSearch.h"
@@ -59,3 +61,56 @@ int main() {
 
     return 0;
 }
+
+ */
+#include <iostream>
+#include "Test.h"
+#include "BreadthFirstSearch.h"
+#include "State.h"
+#include "dddd.h"
+#include "SolveSearch.h"
+#include "DepthFirstSearch.h"
+#include "InterpaterAnswerMatrix.h"
+#include "ClientHandler.h"
+#include "ChachManager.h"
+#include "MyClientHandler.h"
+#include "Solver.h"
+#include "FileCacheManager.h"
+#include "SocketRead.h"
+#include <iostream>
+#include <chrono>
+#include "SocketWrite.h"
+#include "MyParallelServer.h"
+#include "IndexsMat.h"
+#include "SolveSearch.h"
+int main() {
+    //  ParamsToUpdate* params = new ParamsToUpdate();
+    // auto start = std::chrono::system_clock::now();
+    //Searcher<int>* solver = new BestFirstSearch<int>();
+    auto* mySerialServer = new MyParallelServer();
+/*
+   auto* ooo = new SocketRead(5402);ParallelServer
+   auto* bbb = new SocketWriter(5400);
+*/
+
+    //RowAndCol fff()
+    // Searcher<> best = new BestFirstSearch
+    // auto* best = new BestFirstSearch<RowAndCol>();
+    auto* mm = new FileCacheManager<string,string>;
+    //mm->loadFile();
+    auto* nn = new BreadthFirstSearch<IndexsMat>();
+    auto* interpeterProblem = new MatrixInter();
+    auto* interpterSolution = new InterpaterAnswerMatrix();
+    auto* serchhhhh = new SolveSearch<IndexsMat, string>(nn,interpeterProblem,interpterSolution);
+    //auto* paramsToUpdate = new ParamsToUpdate();
+    auto* clietS = new MyClientHandler(serchhhhh, mm);
+
+
+    mySerialServer->open(5400,clietS);
+
+    mm->writeToFile();
+
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+

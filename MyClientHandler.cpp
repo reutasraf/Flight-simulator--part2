@@ -2,6 +2,7 @@
 // Created by reut on 03/01/19.
 //
 
+#include <unistd.h>
 #include "MyClientHandler.h"
 
 void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) {
@@ -31,6 +32,8 @@ void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) 
     output->writeLine(this->cm->getSolution(allLine));
 
 
+
+
 }
 
 string MyClientHandler::setInformation(IStreamReader *input) {
@@ -56,7 +59,7 @@ vector<vector<string >> MyClientHandler:: lexer(string longString){
     vector<vector<string >> returnVal;
     vector<string > listOfterLex;
     string enterTolist = "";
-    regex number("[0-9.]*");
+    regex number("[0-9.-]*");
     smatch m;
     while(longString.size()>0) {
         if (longString[0] == '\n') {
@@ -64,7 +67,7 @@ vector<vector<string >> MyClientHandler:: lexer(string longString){
             returnVal.push_back(listOfterLex);
             enterTolist = "";
             listOfterLex.clear();
-        } else if (longString[0] >= 48 && longString[0] < 58) {
+        } else if ((longString[0] >= 48 && longString[0] < 58)||(longString[0]=='-')) {
             regex_search(longString, m, number);
             for (unsigned i = 0; i < m.size(); ++i) {
                 enterTolist += enterTolist + m.str(i);
@@ -81,5 +84,6 @@ vector<vector<string >> MyClientHandler:: lexer(string longString){
             longString = longString.substr(1, longString.size());
         }
     }
+    int h =0;
     return returnVal;
 }

@@ -89,7 +89,7 @@ void* OpenThreadFunc(void* args){
     //params->server2->createSock(params->port,params->timeRead);
     SocketWrite* socketWrite = new SocketWrite();
     SocketRead* socketRead = new SocketRead();
-    while (params->shouldStop)    {
+    while (!*(params->shouldStop)){
         int id = accept(params->sock_fd);
         socketWrite->SetSocketWrite(id);
         socketRead->SetId(id);
