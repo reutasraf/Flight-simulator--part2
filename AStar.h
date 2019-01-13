@@ -25,8 +25,9 @@ class AStar:public Searcher<T>{
         double f = abs(start->getState().getRow()-goal->getState().getRow())
                 +abs(start->getState().getColumn()-goal->getState().getColumn());
 
-        start->setPathCost(start->getCost());
+        start->setShortestPathVal(start->getCost());
         this->open1.push_back(start);
+
 
         while(!this->open1.empty()){
             State<T>* current = this->lowestVal(goal);
@@ -42,13 +43,13 @@ class AStar:public Searcher<T>{
                 State<T>* temp = adj.back();
                 adj.pop_back();
 
-                double pathFromCurrent = current->getPathCost()+temp->getCost();
+                double pathFromCurrent = current->getShortestPathVal()+temp->getCost();
                 if( find(this->open1.begin(),this->open1.end(),temp)!=this->open1.end()){
-                    if(temp->getPathCost()<pathFromCurrent){
+                    if(temp->getShortestPathVal()<pathFromCurrent){
                         continue;
                     }
                 }else if(find(close.begin(),close.end(),temp)!=close.end()){
-                    if(temp->getPathCost()<pathFromCurrent) {
+                    if(temp->getShortestPathVal()<pathFromCurrent) {
                         continue;
                     }
                     close.pop(temp);
@@ -56,7 +57,7 @@ class AStar:public Searcher<T>{
                 }else{
                     this->open1.push_back(temp);
                 }
-                temp->setPathCost(pathFromCurrent);
+                temp->setShortestPathVal(pathFromCurrent);
                 temp->setCameFrom(current);
 
             }
@@ -82,7 +83,7 @@ class AStar:public Searcher<T>{
         open1.pop_back();
 
 
-        double huristic = abs(lowest->getI() - goal->getI()) +abs(lowest->getJ() - goal->getJ());
+        double huristic = abs(lowest->getState().getRow() - goal->getState().getRow() +abs(lowest->getState().getColumn() - goal->getState().getColumn()));
         double first = huristic + lowest->getPathCost();
 
         while(!this->open1.empty()){
@@ -90,8 +91,8 @@ class AStar:public Searcher<T>{
             open1.pop_back();
 
 
-            huristic = abs(state->getI() - goal->getI()) +abs(state->getJ() - goal->getJ());
-            double newCost = huristic + state->getPathCost();
+            huristic = abs(state->getState().getRow()- goal->getState().getRow()) +abs(state->getState().getColumn() - goal->getState().getColumn());
+            double newCost = huristic + state->getShortestPathVal();
 
             if(newCost<first){
                 temp.push_back(lowest);
