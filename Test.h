@@ -21,6 +21,7 @@ class Test {
 public:
     void testAll();
     static void printFromTHeThread();
+
 };
 
 #endif //PROJ2_TEST_H

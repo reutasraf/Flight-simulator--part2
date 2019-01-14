@@ -39,7 +39,7 @@ Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input)
             IndexsMat indexsMat;
             indexsMat.setColumn(j);
             indexsMat.setRow(i);
-            auto * state = new State<IndexsMat>(indexsMat,val);
+            auto * state = new State<IndexsMat>(indexsMat,val,0);
             vec.push_back(state);
             if((i == stoi(start[0])) && (j==stoi(start[1]))){
                 matrixSearchable->setStart(state);

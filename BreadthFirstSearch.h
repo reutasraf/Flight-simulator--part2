@@ -6,6 +6,7 @@
 #include <list>
 #include <algorithm>
 #include "Searcher.h"
+#include <iostream>
 
 using namespace std;
 template <class T>
@@ -27,6 +28,7 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
 
     // Create a queue for BFS
     std::list<State<T>*> queue;
+    //cout<<queue.size()<<endl;
 
     //vector<State<T>> close;
     State<T>* state = searchable->getInitialState();
@@ -45,11 +47,12 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
         state = queue.front();
         queue.pop_front();
 
-        this->nodesEvaluated++;
+
 
         if(searchable->getGoalState()->Equal(state)){
             break;
         }
+        this->nodesEvaluated++;
         // Get all adjacent vertices of the dequeued
         // vertex s. If a adjacent has not been visited,
         // then mark it visited and enqueue it
@@ -85,6 +88,9 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
     //save number of nodes that evaluated
     //this->nodesEvaluated=returnVal.size();
 
+    cout<<"bfs"<<endl;
+    cout<<currentState->getShortestPathVal()<<endl;
+    cout<<this->nodesEvaluated<<endl;
     return returnVal;
 
 

@@ -9,21 +9,20 @@ using namespace std;
 
 template <class T>
 class AStar:public Searcher<T>{
-    int nodeThatEleveted = 0 ;
+    int nodeThatEleveted = 0;
     vector<State<T>*> open1;
-    virtual int getNumberOfNodeElevatde(){
+    virtual int getNumberOfNodesEvaluated(){
         return this->nodeThatEleveted;
     }
 
-    vector<State<T>*> tempMyAStar(Searchable<T> *searchable){
-
+    vector<State<T>*> search(Searchable<T> *searchable) {
         vector<State<T>*> close;
         State<T>* goal = searchable->getGoalState();
-        State<T>* start = searchable->getInitalState();
+        State<T>* start = searchable->getInitialState();
 
 
         double f = abs(start->getState().getRow()-goal->getState().getRow())
-                +abs(start->getState().getColumn()-goal->getState().getColumn());
+                   +abs(start->getState().getColumn()-goal->getState().getColumn());
 
         start->setShortestPathVal(start->getCost());
         this->open1.push_back(start);
@@ -31,17 +30,22 @@ class AStar:public Searcher<T>{
 
         while(!this->open1.empty()){
             State<T>* current = this->lowestVal(goal);
+            current->setVisited();
+            close.push_back(current);
 
 
-            this->nodeThatEleveted++;
-            if(current->Equals(goal)){
+            if(current->Equal(goal)){
                 break;
             }
+            this->nodeThatEleveted++;
 
             vector<State<T>*> adj = searchable->getAllPossibleStates(current);
             while (!adj.empty()){
                 State<T>* temp = adj.back();
                 adj.pop_back();
+                if(temp->ifVisited()){
+                    continue;
+                }
 
                 double pathFromCurrent = current->getShortestPathVal()+temp->getCost();
                 if( find(this->open1.begin(),this->open1.end(),temp)!=this->open1.end()){
@@ -52,28 +56,38 @@ class AStar:public Searcher<T>{
                     if(temp->getShortestPathVal()<pathFromCurrent) {
                         continue;
                     }
-                    close.pop(temp);
-                    open1.push_back(temp);
+                    //this->popFrom(temp,&close);
+                    //open1.push_back(temp);
                 }else{
                     this->open1.push_back(temp);
                 }
                 temp->setShortestPathVal(pathFromCurrent);
                 temp->setCameFrom(current);
-
             }
-            close.push_back(current);
+
 
         }
 
-        vector<State<T>*> path = this->ThePath(searchable->getGoalState());
 
-        string solution =  searchable->WhereToGo(path);
-        return solution;
+        vector<State<T>*> returnVal;
+        State<T>* currentState = searchable->getGoalState();
+        State<T>* beginState = searchable->getInitialState();
+        if(currentState->getDad()==NULL){
+            return returnVal;
+        }
 
-    }
+        while (!beginState->Equal(currentState)){
+            returnVal.push_back(currentState);
+            currentState = currentState->getDad();
+        }
+        returnVal.push_back(searchable->getInitialState());
 
-    string search(Searchable<T> *searchable) {
-        return this->tempMyAStar(searchable);
+        std::reverse(returnVal.begin(),returnVal.end());
+
+        cout<<"astar"<<endl;
+        cout<<goal->getShortestPathVal()<<endl;
+        cout<<this->nodeThatEleveted<<endl;
+        return returnVal;
     }
 
     State<T>* lowestVal(State<T>* goal) {
@@ -83,18 +97,21 @@ class AStar:public Searcher<T>{
         open1.pop_back();
 
 
-        double huristic = abs(lowest->getState().getRow() - goal->getState().getRow() +abs(lowest->getState().getColumn() - goal->getState().getColumn()));
-        double first = huristic + lowest->getPathCost();
+        double huristic = abs(lowest->getState().getRow() - goal->getState().getRow())
+                        +abs(lowest->getState().getColumn() - goal->getState().getColumn());
+        double first = huristic + lowest->getShortestPathVal();
 
         while(!this->open1.empty()){
             State<T>* state = open1.back();
             open1.pop_back();
 
 
-            huristic = abs(state->getState().getRow()- goal->getState().getRow()) +abs(state->getState().getColumn() - goal->getState().getColumn());
+            huristic = abs(state->getState().getRow()- goal->getState().getRow())
+                    +abs(state->getState().getColumn() - goal->getState().getColumn());
             double newCost = huristic + state->getShortestPathVal();
 
             if(newCost<first){
+                first = newCost;
                 temp.push_back(lowest);
                 lowest = state;
                 continue;
@@ -108,6 +125,22 @@ class AStar:public Searcher<T>{
         }
 
         return lowest;
+    }
+
+    void popFrom(State<T>* temp,vector<State<T>*>* close){
+        vector<State<T>*> move;
+        typename vector<State<T>*>::iterator it;
+        it = close->begin();
+        for(;it !=close->end();++it){
+            State<T>* now = close->back();
+            close->pop_back();
+            move.push_back(now);
+            if(now->Equal(temp)){
+                this->open1.push_back(now);
+                return;
+            }
+        }
+
     }
 
 };

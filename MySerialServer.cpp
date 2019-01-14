@@ -7,14 +7,12 @@ struct dataToSoc{
     bool * shouldStop;
 
 };
-
 #include <strings.h>
 #include "MySerialServer.h"
 #include "SocketRead.h"
 #include "SocketWrite.h"
 
 int MySerialServer::open(int port, ClientHandler* clientHandler) {
-
 
     int portno;
     //struct sockaddr_in serv_addr, cli_addr;
@@ -71,6 +69,7 @@ int accept(int sock_fd)
     int clilen;
     int client_sock_fd = ::accept(sock_fd, (struct sockaddr*) &client_sock, (socklen_t *)&clilen);
     if (client_sock_fd < 0) {
+        cout<<"accept";
         __throw_bad_exception();
     }
     return client_sock_fd;

@@ -3,6 +3,10 @@
 
 CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.cpp
 CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../BestFirstSearch.h
+CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../MyPriorityQueue.h
+CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../Searcher.h
+CMakeFiles/proj2.dir/BestFirstSearch.cpp.o: ../State.h
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o: ../BreadthFirstSearch.cpp
 
@@ -55,6 +59,10 @@ CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../OStreamWriter.h
 CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../Server.h
 CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../SocketRead.h
 CMakeFiles/proj2.dir/MyParallelServer.cpp.o: ../SocketWrite.h
+
+CMakeFiles/proj2.dir/MyPriorityQueue.cpp.o: ../MyPriorityQueue.cpp
+CMakeFiles/proj2.dir/MyPriorityQueue.cpp.o: ../MyPriorityQueue.h
+CMakeFiles/proj2.dir/MyPriorityQueue.cpp.o: ../State.h
 
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/proj2.dir/MySerialServer.cpp.o: ../IStreamReader.h
@@ -118,6 +126,8 @@ CMakeFiles/proj2.dir/dddd.cpp.o: ../State.h
 CMakeFiles/proj2.dir/dddd.cpp.o: ../dddd.cpp
 CMakeFiles/proj2.dir/dddd.cpp.o: ../dddd.h
 
+CMakeFiles/proj2.dir/main.cpp.o: ../AStar.h
+CMakeFiles/proj2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../BreadthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ClientHandler.h
@@ -131,6 +141,7 @@ CMakeFiles/proj2.dir/main.cpp.o: ../MatrixInter.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MatrixSearchable.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MyClientHandler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MyParallelServer.h
+CMakeFiles/proj2.dir/main.cpp.o: ../MyPriorityQueue.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/proj2.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../OStreamWriter.h

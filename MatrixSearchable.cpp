@@ -1,5 +1,4 @@
 
-
 #include "MatrixSearchable.h"
 vector<State<IndexsMat>*> MatrixSearchable:: getAllPossibleStates(State<IndexsMat>* state){
     vector<State<IndexsMat>*>  adjOfState;
@@ -162,3 +161,5 @@ State<IndexsMat>* MatrixSearchable::getNei(int col, int row){
         return nullptr;
     }
 }
+
+

@@ -2,6 +2,7 @@
 #ifndef PROJ2_SOLVESEARCH_H
 #define PROJ2_SOLVESEARCH_H
 
+#include <iostream>
 #include "Solver.h"
 #include "Searchable.h"
 #include "MatrixInter.h"
@@ -23,9 +24,13 @@ public:
     }
 
     virtual Solution solve(vector<vector<string>> information){
+        vector<State<IndexsMat >*> vector1;
         Searchable<T>* matrix=inter->interpretation(information);
-        vector<State<IndexsMat >*> vector1=search->search(matrix);
+        vector1=search->search(matrix);
         string result= interpaterAnswerMatrix->interpretation(vector1);
+
+        //TODO delete states
+        //delete(matrix);
         return result;
 
     }

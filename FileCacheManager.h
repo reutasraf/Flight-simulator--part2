@@ -30,10 +30,6 @@ public:
     }
 };
 
-
-
-
-
 template<class P, class S>
 bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
     if(mapSolution.size()==0){

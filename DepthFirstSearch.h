@@ -9,6 +9,7 @@
 
 #include <list>
 #include <algorithm>
+#include <iostream>
 #include "Searcher.h"
 
 
@@ -44,7 +45,7 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
         current = stack.top();
         stack.pop();
 
-        this->nodesEvaluated++;
+
 
         //if the current not mark as visited already-mark as visited
         if (!current->ifVisited()) {
@@ -55,6 +56,7 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
         if (current->Equal(goal)) {
             break;
         }
+        this->nodesEvaluated++;
 
         vector<State<T> *> adj = searchable->getAllPossibleStates(current);
         it = adj.begin();
@@ -85,6 +87,9 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
     //save number of nodes that evaluated
     //this->nodesEvaluated=vecNodes.size();
 
+    cout<<"dfs"<<endl;
+    cout<<goalState->getShortestPathVal()<<endl;
+    cout<<this->nodesEvaluated<<endl;
     return vecNodes;
 }
 

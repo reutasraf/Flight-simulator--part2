@@ -2,6 +2,7 @@
 #ifndef PROBLEMSOLVING_MATRIXSEARCHABLE_H
 #define PROBLEMSOLVING_MATRIXSEARCHABLE_H
 #include <vector>
+#include <iostream>
 #include "Searchable.h"
 #include "IndexsMat.h"
 using namespace std;
@@ -13,7 +14,6 @@ class MatrixSearchable : public Searchable<IndexsMat>{
     // 0 - col, 1 - row
 public:
     //הערך התחלה שנכנס אחרי המטריצה - אמור להתבצע אתחול של הערך אחרי עיבוד הקלט?!!!!
-
 
     void setMatrix(vector<vector<State<IndexsMat >*>> mat){
         this->matrix =mat;

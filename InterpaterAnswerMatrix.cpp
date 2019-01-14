@@ -2,11 +2,14 @@
 // Created by tehila on 10/01/19.
 //
 
+#include <iostream>
 #include "InterpaterAnswerMatrix.h"
 
 string InterpaterAnswerMatrix::interpretation(vector<State<IndexsMat> *> vec) {
 
     string result="";
+    //cout<<vec.size()<<endl;
+
     //TODO check about size-1
     if(vec.size()==0){
         return "-1";
@@ -32,7 +35,9 @@ string InterpaterAnswerMatrix::interpretation(vector<State<IndexsMat> *> vec) {
         }
 
     }
-    string afterRe = result.substr(0,result.size()-1);
+    string afterRe="";
+    afterRe = result.substr(0,result.size()-1);
 
+    //cout<<afterRe<<endl;
     return afterRe;
 }

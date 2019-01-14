@@ -116,7 +116,7 @@ void MyParallelServer:: start(dataToSoc* params){
         exit(1);
     }
     //TODO שיננו את המקסימומי
-    if (listen(serverSocket, MAX_CONNECTED_CLIENTS) < 0)   {
+    if (listen(serverSocket, SOMAXCONN) < 0)   {
         perror("listen error");
         exit(1);
     }

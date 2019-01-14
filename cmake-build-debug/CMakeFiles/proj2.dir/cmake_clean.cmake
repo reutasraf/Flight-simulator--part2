@@ -18,8 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/proj2.dir/SolveSearch.cpp.o"
   "CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o"
   "CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o"
-  "CMakeFiles/proj2.dir/BestFirstSearch.cpp.o"
   "CMakeFiles/proj2.dir/MyPriorityQueue.cpp.o"
+  "CMakeFiles/proj2.dir/BestFirstSearch.cpp.o"
   "proj2.pdb"
   "proj2"
 )
