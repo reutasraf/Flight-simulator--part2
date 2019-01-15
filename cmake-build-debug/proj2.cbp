@@ -87,9 +87,6 @@
 		<Unit filename="/home/reut/CLionProjects/part2/AStar.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/BestFirstSearch.cpp">
-			<Option target="proj2"/>
-		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/BestFirstSearch.h">
 			<Option target="proj2"/>
 		</Unit>
@@ -105,22 +102,19 @@
 		<Unit filename="/home/reut/CLionProjects/part2/ClientHandler.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/DepthFirstSearch.cpp">
+		<Unit filename="/home/reut/CLionProjects/part2/Controler.cpp">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/Controler.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/DepthFirstSearch.h">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/FileCacheManager.cpp">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/FileCacheManager.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/IStreamReader.h">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/IndexsMat.cpp">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/IndexsMat.h">
@@ -159,25 +153,16 @@
 		<Unit filename="/home/reut/CLionProjects/part2/MyParallelServer.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/MyPriorityQueue.cpp">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/MyPriorityQueue.h">
-			<Option target="proj2"/>
-		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.cpp">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/MySerialServer.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/MyTestClientHandler.cpp">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/MyTestClientHandler.h">
-			<Option target="proj2"/>
-		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/OStreamWriter.h">
+			<Option target="proj2"/>
+		</Unit>
+		<Unit filename="/home/reut/CLionProjects/part2/PriorityQueue.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/Searchable.h">
@@ -201,16 +186,10 @@
 		<Unit filename="/home/reut/CLionProjects/part2/SocketWrite.h">
 			<Option target="proj2"/>
 		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/SolveSearch.cpp">
-			<Option target="proj2"/>
-		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/SolveSearch.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/Solver.h">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/State.cpp">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/State.h">
@@ -220,18 +199,6 @@
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/StringReverser.h">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/Test.cpp">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/Test.h">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/dddd.cpp">
-			<Option target="proj2"/>
-		</Unit>
-		<Unit filename="/home/reut/CLionProjects/part2/dddd.h">
 			<Option target="proj2"/>
 		</Unit>
 		<Unit filename="/home/reut/CLionProjects/part2/main.cpp">

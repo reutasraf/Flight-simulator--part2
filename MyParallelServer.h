@@ -30,12 +30,16 @@ struct dataToSoc{
 };
 
 class MyParallelServer :public Server{
+private:
     pthread_t thread;
     int clientSock;
     int serverSocket;
     bool shouldStop;
 
 public:
+    /**
+     * constructor.
+     */
     MyParallelServer(){
         this->shouldStop = false;
     }

@@ -5,8 +5,13 @@
 #ifndef PROJ2_INDEXSMAT_H
 #define PROJ2_INDEXSMAT_H
 
-
+/**
+ * the i,j that represent the location  in the natrix
+ */
 class IndexsMat {
+private:
+    int row;
+    int column;
 public:
     void setRow(int row) {
         IndexsMat::row = row;
@@ -16,20 +21,17 @@ public:
         IndexsMat::column = column;
     }
 
-private:
-    int row;
-    int column;
-public:
-    /*IndexsMat(int i,int j){
-        this->column = i;
-        this->row = j;
-    }*/
     int getColumn(){
         return this->column;
     }
     int getRow(){
         return this->row;
     }
+    /**
+     * check if it the same location(i,j equal)
+     * @param indexsMat
+     * @return
+     */
     bool operator==(IndexsMat indexsMat) {
         return row == indexsMat.getRow() && column == indexsMat.getColumn();
     }

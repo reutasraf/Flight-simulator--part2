@@ -6,11 +6,14 @@
 #include <cstring>
 
 
-
+/**
+ * the thread that hendle the client
+ * @param arg
+ * @return
+ */
 void* handleClient(void* arg){
     //auto args = static_cast<ParamsToUpdate*>(arg);
     struct dataToSoc* params=(struct dataToSoc*) arg;
-
     SocketRead socketRead;
     socketRead.SetId(params->sockClient);
     SocketWrite socketWriter;
@@ -20,16 +23,17 @@ void* handleClient(void* arg){
 }
 
 
-
-
-
+/**
+ * open the threads for the clients
+ * @param arg
+ * @return
+ */
 void* acceptClients(void* arg)
 {
     //
     vector<dataToSoc*> cli;
     vector<pthread_t> forJoin;
     //
-
 
 
     struct dataToSoc* params=(struct dataToSoc*) arg;
@@ -49,7 +53,7 @@ void* acceptClients(void* arg)
         int new_sock;
 
         timeval timeout;
-        timeout.tv_sec = 10;
+        timeout.tv_sec = 30;
         timeout.tv_usec = 0;
 
         setsockopt(params->sockServer, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
@@ -76,14 +80,14 @@ void* acceptClients(void* arg)
 
             pthread_t threadId;
 
-            /*struct dataToSoc *para = new dataToSoc;
+            struct dataToSoc *para = new dataToSoc;
             para->ch = params->ch;
             para->sockServer = params->sockServer;
             para->port = params->port;
             para->sockClient = params->sockClient;
             para->shouldStop = params->shouldStop;
             //
-            cli.push_back(para);*/
+            cli.push_back(para);
             //
 
             pthread_create(&threadId, nullptr, &handleClient, params);
@@ -101,10 +105,19 @@ void* acceptClients(void* arg)
         cout<<"hh"<<endl;
     }
     //  pthread_mutex_unlock(&args->getMutex());
+
+    for (int i =0;i<cli.size();++i){
+        delete(cli[i]);
+    }
     return nullptr;
 }
 
-
+/**
+ * initilize some parameters from the struct and call to the function that create the socket
+ * @param port
+ * @param clientHandler
+ * @return
+ */
 int MyParallelServer:: open(int port, ClientHandler* clientHandler){
     //ParamsToUpdate* paramsToUpdate = new  ParamsToUpdate();
     //paramsToUpdate->setPortServer(port);
@@ -115,11 +128,15 @@ int MyParallelServer:: open(int port, ClientHandler* clientHandler){
     //calls the function opens the socket
     //paramsToUpdate->setClient(clientHandler);
     start(params);
+    delete(params);
     return 0;
 }
 
 
-
+/**
+ * create the socket
+ * @param params
+ */
 void MyParallelServer:: start(dataToSoc* params){
     //Create a socket point
     this->serverSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -149,10 +166,12 @@ void MyParallelServer:: start(dataToSoc* params){
     pthread_join(thread, nullptr);
 //    pthread_mutex_lock(&paramsToUpdate->getMutex());
 //
-    cout<<"poooooo hadov"<<endl;
+    cout<<"!!!i'm in love with you!!! "<<endl;
 }
 
-
+/**
+ * finish with the Socket
+ */
 void MyParallelServer:: stop(){
     pthread_cancel(thread);
     close(this->serverSocket);

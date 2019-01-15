@@ -13,7 +13,10 @@
 #include <sys/socket.h>
 #include <algorithm>
 
-
+/**
+ * read line from te client
+ * @return the line
+ */
 string SocketRead::getLine() {
     char buffer[1000];
     ssize_t bytes_read;
@@ -22,12 +25,13 @@ string SocketRead::getLine() {
     if (bytes_read < 0) {
         //cout<<"here";
         __throw_bad_exception();
-    }   else if (bytes_read == 0)   {
+    }else if (bytes_read == 0)   {
         __throw_bad_exception();
         //connection closed
         int y = 0;
     } else  {
         buffer[bytes_read] = NULL;
     }
+    cout<<buffer<<endl;
     return buffer;
 }

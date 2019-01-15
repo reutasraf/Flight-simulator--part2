@@ -5,7 +5,7 @@
 
 #include "Searcher.h"
 #include "Searchable.h"
-#include "MyPriorityQueue.h"
+#include "PriorityQueue.h"
 #include <unordered_map>
 #include <string>
 #include <algorithm>
@@ -17,7 +17,7 @@ using namespace std;
 template <class T>
 class BestFirstSearch : public Searcher<T>{
 
-    MyPriorityQueue<T>* openList;
+    PriorityQueue<T>* openList;
     int nodesEvaluated=0;
     vector<State<T>*> path;
 public:
@@ -29,7 +29,7 @@ public:
     virtual vector<State<T>*> search(Searchable<T> *searchable) {
         path.clear();
 
-        this->openList = new MyPriorityQueue<T>();
+        this->openList = new PriorityQueue<T>();
         State<T>* start = searchable->getInitialState();
         this->openList->addToPqueue(start);
         start->setShortestPathVal(start->getCost());

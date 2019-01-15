@@ -4,27 +4,15 @@
 
 #include "MatrixInter.h"
 #include "IndexsMat.h"
-
+/**
+ * interpater: get the vector of vector of input and return a matrix(Searchable)
+ * @param input
+ * @return
+ */
 Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input) {
 
     vector<vector<State<double >*>> myMatrix;
     vector<vector<State<IndexsMat>*>> matrix;
-
-    /*
-    auto itCol = input.begin();
-    int i = 0;
-    int j = 0;
-    for(itCol;itCol!=input.end();++itCol) {
-        auto itRow = (*(itCol)).begin();
-        for(itRow;itRow!=(*(itCol)).end();++itRow){
-            double val = stod(*itRow);
-            IndexsMat* indexsMat = new IndexsMat(i,j);
-            State<IndexsMat*>* state = new State<IndexsMat* >(indexsMat,val);
-            ++j;
-        }
-        ++i;
-    }
-     */
 
     auto * matrixSearchable=new MatrixSearchable();
     vector<string> end = input.back();
@@ -32,6 +20,7 @@ Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input)
     vector<string> start = input.back();
     input.pop_back();
     int size = input.size();
+    //convert from string to state
     for(int i  = 0;i<size;++i){
         vector<State<IndexsMat >*> vec;
         for(int j  = 0;j<input[i].size();++j){
@@ -48,16 +37,10 @@ Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input)
                 matrixSearchable->setEnd(state);
             }
         }
+        //add it to matrix
         matrix.push_back(vec);
     }
 
     matrixSearchable->setMatrix(matrix);
     return matrixSearchable;
-    //TODO
-
-
-    //לעשות
-
-
-    //return MatrixSearchable();
 }

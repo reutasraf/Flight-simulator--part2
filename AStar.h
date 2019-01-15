@@ -33,7 +33,7 @@ class AStar:public Searcher<T>{
 
 
         while(!this->open1.empty()){
-            State<T>* current = this->lowestVal(goal);
+            State<T>* current = this->minimalVal(goal);
             current->setVisited();
             close.push_back(current);
 
@@ -79,7 +79,7 @@ class AStar:public Searcher<T>{
         if(currentState->getDad()==NULL){
             return returnVal;
         }
-
+        //loop that create the path
         while (!beginState->Equal(currentState)){
             returnVal.push_back(currentState);
             currentState = currentState->getDad();
@@ -94,7 +94,12 @@ class AStar:public Searcher<T>{
         return returnVal;
     }
 
-    State<T>* lowestVal(State<T>* goal) {
+    /**
+     * the priority queue
+     * @param goal
+     * @return
+     */
+    State<T>* minimalVal(State<T>* goal) {
         vector<State<T>*> temp;
 
         State<T>* lowest = open1.back();

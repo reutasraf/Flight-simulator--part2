@@ -27,6 +27,12 @@ public:
 };
 
 template<class T>
+/**
+ * search according to the DFS
+ * @tparam T
+ * @param searchable
+ * @return
+ */
 vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
 
     // create stack and save the goal and initialize state

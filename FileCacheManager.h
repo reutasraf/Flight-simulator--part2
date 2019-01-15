@@ -33,6 +33,13 @@ public:
 };
 
 template<class P, class S>
+/**
+ * check if there is already a solution to the problem that we get from the client in the map
+ * @tparam P
+ * @tparam S
+ * @param p
+ * @return true if exist solution to that problem
+ */
 bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
     pthread_mutex_lock(&mutex);
     if(mapSolution.size()==0){
@@ -51,6 +58,13 @@ bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
 }
 
 template<class P, class S>
+/**
+ * get the solution to the problem from the map if exist
+ * @tparam P
+ * @tparam S
+ * @param p
+ * @return olution to the problem from the map if exist
+ */
 S FileCacheManager<P, S>::getSolution(P p) {
     if(this->IsSolutionSaved(p)){
         return (this->mapSolution).at(p);
@@ -60,6 +74,13 @@ S FileCacheManager<P, S>::getSolution(P p) {
 }
 
 template<class P, class S>
+/**
+ * save the solution in the map
+ * @tparam P
+ * @tparam S
+ * @param p
+ * @param s
+ */
 void FileCacheManager<P, S>::saveSolution(P p, S s) {
 
     pthread_mutex_lock(&mutex);
@@ -69,6 +90,11 @@ void FileCacheManager<P, S>::saveSolution(P p, S s) {
 }
 
 template<class P, class S>
+/**
+ * load the information from the file
+ * @tparam P
+ * @tparam S
+ */
 void FileCacheManager<P, S>::loadFile() {
 
     fstream table;
@@ -89,6 +115,11 @@ void FileCacheManager<P, S>::loadFile() {
 }
 
 template<class P, class S>
+/**
+ * write to the file in the end of the running
+ * @tparam P
+ * @tparam S
+ */
 void FileCacheManager<P, S>::writeToFile() {
 
     fstream table;

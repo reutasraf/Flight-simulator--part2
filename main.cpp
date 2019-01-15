@@ -67,10 +67,9 @@ int main() {
 
 #include <vector>
 #include <iostream>
-#include "Test.h"
+
 #include "BreadthFirstSearch.h"
 #include "State.h"
-#include "dddd.h"
 #include "SolveSearch.h"
 #include "DepthFirstSearch.h"
 #include "InterpaterAnswerMatrix.h"
@@ -98,11 +97,6 @@ int main(int args,char* argv[]) {
         perror( "invalid args");
         exit(1);
     }
-
-
-
-
-
 
 
     //  ParamsToUpdate* params = new ParamsToUpdate();

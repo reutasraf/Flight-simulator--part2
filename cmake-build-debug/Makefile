@@ -123,33 +123,6 @@ proj2/fast:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/build
 .PHONY : proj2/fast
 
-BestFirstSearch.o: BestFirstSearch.cpp.o
-
-.PHONY : BestFirstSearch.o
-
-# target to build an object file
-BestFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BestFirstSearch.cpp.o
-.PHONY : BestFirstSearch.cpp.o
-
-BestFirstSearch.i: BestFirstSearch.cpp.i
-
-.PHONY : BestFirstSearch.i
-
-# target to preprocess a source file
-BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BestFirstSearch.cpp.i
-.PHONY : BestFirstSearch.cpp.i
-
-BestFirstSearch.s: BestFirstSearch.cpp.s
-
-.PHONY : BestFirstSearch.s
-
-# target to generate assembly for a file
-BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BestFirstSearch.cpp.s
-.PHONY : BestFirstSearch.cpp.s
-
 BreadthFirstSearch.o: BreadthFirstSearch.cpp.o
 
 .PHONY : BreadthFirstSearch.o
@@ -177,86 +150,32 @@ BreadthFirstSearch.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s
 .PHONY : BreadthFirstSearch.cpp.s
 
-DepthFirstSearch.o: DepthFirstSearch.cpp.o
+Controler.o: Controler.cpp.o
 
-.PHONY : DepthFirstSearch.o
-
-# target to build an object file
-DepthFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.o
-.PHONY : DepthFirstSearch.cpp.o
-
-DepthFirstSearch.i: DepthFirstSearch.cpp.i
-
-.PHONY : DepthFirstSearch.i
-
-# target to preprocess a source file
-DepthFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.i
-.PHONY : DepthFirstSearch.cpp.i
-
-DepthFirstSearch.s: DepthFirstSearch.cpp.s
-
-.PHONY : DepthFirstSearch.s
-
-# target to generate assembly for a file
-DepthFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/DepthFirstSearch.cpp.s
-.PHONY : DepthFirstSearch.cpp.s
-
-FileCacheManager.o: FileCacheManager.cpp.o
-
-.PHONY : FileCacheManager.o
+.PHONY : Controler.o
 
 # target to build an object file
-FileCacheManager.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/FileCacheManager.cpp.o
-.PHONY : FileCacheManager.cpp.o
+Controler.cpp.o:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Controler.cpp.o
+.PHONY : Controler.cpp.o
 
-FileCacheManager.i: FileCacheManager.cpp.i
+Controler.i: Controler.cpp.i
 
-.PHONY : FileCacheManager.i
-
-# target to preprocess a source file
-FileCacheManager.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/FileCacheManager.cpp.i
-.PHONY : FileCacheManager.cpp.i
-
-FileCacheManager.s: FileCacheManager.cpp.s
-
-.PHONY : FileCacheManager.s
-
-# target to generate assembly for a file
-FileCacheManager.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/FileCacheManager.cpp.s
-.PHONY : FileCacheManager.cpp.s
-
-IndexsMat.o: IndexsMat.cpp.o
-
-.PHONY : IndexsMat.o
-
-# target to build an object file
-IndexsMat.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.o
-.PHONY : IndexsMat.cpp.o
-
-IndexsMat.i: IndexsMat.cpp.i
-
-.PHONY : IndexsMat.i
+.PHONY : Controler.i
 
 # target to preprocess a source file
-IndexsMat.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.i
-.PHONY : IndexsMat.cpp.i
+Controler.cpp.i:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Controler.cpp.i
+.PHONY : Controler.cpp.i
 
-IndexsMat.s: IndexsMat.cpp.s
+Controler.s: Controler.cpp.s
 
-.PHONY : IndexsMat.s
+.PHONY : Controler.s
 
 # target to generate assembly for a file
-IndexsMat.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/IndexsMat.cpp.s
-.PHONY : IndexsMat.cpp.s
+Controler.cpp.s:
+	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Controler.cpp.s
+.PHONY : Controler.cpp.s
 
 InterpaterAnswerMatrix.o: InterpaterAnswerMatrix.cpp.o
 
@@ -393,33 +312,6 @@ MyParallelServer.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyParallelServer.cpp.s
 .PHONY : MyParallelServer.cpp.s
 
-MyPriorityQueue.o: MyPriorityQueue.cpp.o
-
-.PHONY : MyPriorityQueue.o
-
-# target to build an object file
-MyPriorityQueue.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyPriorityQueue.cpp.o
-.PHONY : MyPriorityQueue.cpp.o
-
-MyPriorityQueue.i: MyPriorityQueue.cpp.i
-
-.PHONY : MyPriorityQueue.i
-
-# target to preprocess a source file
-MyPriorityQueue.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyPriorityQueue.cpp.i
-.PHONY : MyPriorityQueue.cpp.i
-
-MyPriorityQueue.s: MyPriorityQueue.cpp.s
-
-.PHONY : MyPriorityQueue.s
-
-# target to generate assembly for a file
-MyPriorityQueue.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyPriorityQueue.cpp.s
-.PHONY : MyPriorityQueue.cpp.s
-
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -446,33 +338,6 @@ MySerialServer.s: MySerialServer.cpp.s
 MySerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MySerialServer.cpp.s
 .PHONY : MySerialServer.cpp.s
-
-MyTestClientHandler.o: MyTestClientHandler.cpp.o
-
-.PHONY : MyTestClientHandler.o
-
-# target to build an object file
-MyTestClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyTestClientHandler.cpp.o
-.PHONY : MyTestClientHandler.cpp.o
-
-MyTestClientHandler.i: MyTestClientHandler.cpp.i
-
-.PHONY : MyTestClientHandler.i
-
-# target to preprocess a source file
-MyTestClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyTestClientHandler.cpp.i
-.PHONY : MyTestClientHandler.cpp.i
-
-MyTestClientHandler.s: MyTestClientHandler.cpp.s
-
-.PHONY : MyTestClientHandler.s
-
-# target to generate assembly for a file
-MyTestClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/MyTestClientHandler.cpp.s
-.PHONY : MyTestClientHandler.cpp.s
 
 SocketRead.o: SocketRead.cpp.o
 
@@ -528,60 +393,6 @@ SocketWrite.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SocketWrite.cpp.s
 .PHONY : SocketWrite.cpp.s
 
-SolveSearch.o: SolveSearch.cpp.o
-
-.PHONY : SolveSearch.o
-
-# target to build an object file
-SolveSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.o
-.PHONY : SolveSearch.cpp.o
-
-SolveSearch.i: SolveSearch.cpp.i
-
-.PHONY : SolveSearch.i
-
-# target to preprocess a source file
-SolveSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.i
-.PHONY : SolveSearch.cpp.i
-
-SolveSearch.s: SolveSearch.cpp.s
-
-.PHONY : SolveSearch.s
-
-# target to generate assembly for a file
-SolveSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/SolveSearch.cpp.s
-.PHONY : SolveSearch.cpp.s
-
-State.o: State.cpp.o
-
-.PHONY : State.o
-
-# target to build an object file
-State.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/State.cpp.o
-.PHONY : State.cpp.o
-
-State.i: State.cpp.i
-
-.PHONY : State.i
-
-# target to preprocess a source file
-State.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/State.cpp.i
-.PHONY : State.cpp.i
-
-State.s: State.cpp.s
-
-.PHONY : State.s
-
-# target to generate assembly for a file
-State.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/State.cpp.s
-.PHONY : State.cpp.s
-
 StringReverser.o: StringReverser.cpp.o
 
 .PHONY : StringReverser.o
@@ -608,60 +419,6 @@ StringReverser.s: StringReverser.cpp.s
 StringReverser.cpp.s:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/StringReverser.cpp.s
 .PHONY : StringReverser.cpp.s
-
-Test.o: Test.cpp.o
-
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/Test.cpp.s
-.PHONY : Test.cpp.s
-
-dddd.o: dddd.cpp.o
-
-.PHONY : dddd.o
-
-# target to build an object file
-dddd.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.o
-.PHONY : dddd.cpp.o
-
-dddd.i: dddd.cpp.i
-
-.PHONY : dddd.i
-
-# target to preprocess a source file
-dddd.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.i
-.PHONY : dddd.cpp.i
-
-dddd.s: dddd.cpp.s
-
-.PHONY : dddd.s
-
-# target to generate assembly for a file
-dddd.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/dddd.cpp.s
-.PHONY : dddd.cpp.s
 
 main.o: main.cpp.o
 
@@ -699,21 +456,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... proj2"
-	@echo "... BestFirstSearch.o"
-	@echo "... BestFirstSearch.i"
-	@echo "... BestFirstSearch.s"
 	@echo "... BreadthFirstSearch.o"
 	@echo "... BreadthFirstSearch.i"
 	@echo "... BreadthFirstSearch.s"
-	@echo "... DepthFirstSearch.o"
-	@echo "... DepthFirstSearch.i"
-	@echo "... DepthFirstSearch.s"
-	@echo "... FileCacheManager.o"
-	@echo "... FileCacheManager.i"
-	@echo "... FileCacheManager.s"
-	@echo "... IndexsMat.o"
-	@echo "... IndexsMat.i"
-	@echo "... IndexsMat.s"
+	@echo "... Controler.o"
+	@echo "... Controler.i"
+	@echo "... Controler.s"
 	@echo "... InterpaterAnswerMatrix.o"
 	@echo "... InterpaterAnswerMatrix.i"
 	@echo "... InterpaterAnswerMatrix.s"
@@ -729,36 +477,18 @@ help:
 	@echo "... MyParallelServer.o"
 	@echo "... MyParallelServer.i"
 	@echo "... MyParallelServer.s"
-	@echo "... MyPriorityQueue.o"
-	@echo "... MyPriorityQueue.i"
-	@echo "... MyPriorityQueue.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
-	@echo "... MyTestClientHandler.o"
-	@echo "... MyTestClientHandler.i"
-	@echo "... MyTestClientHandler.s"
 	@echo "... SocketRead.o"
 	@echo "... SocketRead.i"
 	@echo "... SocketRead.s"
 	@echo "... SocketWrite.o"
 	@echo "... SocketWrite.i"
 	@echo "... SocketWrite.s"
-	@echo "... SolveSearch.o"
-	@echo "... SolveSearch.i"
-	@echo "... SolveSearch.s"
-	@echo "... State.o"
-	@echo "... State.i"
-	@echo "... State.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
-	@echo "... dddd.o"
-	@echo "... dddd.i"
-	@echo "... dddd.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

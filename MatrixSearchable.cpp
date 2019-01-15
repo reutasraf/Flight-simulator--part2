@@ -1,5 +1,10 @@
 
 #include "MatrixSearchable.h"
+/**
+ * get all the possible states we can go from the current state
+ * @param state
+ * @return possible states we can go from the current state
+ */
 vector<State<IndexsMat>*> MatrixSearchable:: getAllPossibleStates(State<IndexsMat>* state){
     vector<State<IndexsMat>*>  adjOfState;
     vector<State<IndexsMat>*> colLen = matrix.back();
@@ -152,7 +157,12 @@ vector<State<IndexsMat>*> MatrixSearchable:: getAllPossibleStates(State<IndexsMa
     }
     return adjOfState;
 }
-
+/**
+ * get the neighbor according to the col and row we get
+ * @param col
+ * @param row
+ * @return stat-neighbor
+ */
 State<IndexsMat>* MatrixSearchable::getNei(int col, int row){
 
     if(matrix[row][col]->getCost()!=(-1)){

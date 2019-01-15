@@ -36,7 +36,11 @@ void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) 
 
 
 }
-
+/**
+ * get the problem from client
+ * @param input
+ * @return string of the data from the client
+ */
 string MyClientHandler::setInformation(IStreamReader *input) {
     vector<vector<double>> info;
     string line;
@@ -45,6 +49,10 @@ string MyClientHandler::setInformation(IStreamReader *input) {
     bool continueLoop = true;
     while(continueLoop){
         line =input->getLine();
+        if(line[line.size()-1]!='\n'){
+            line=line+'\n';
+        }
+        //cout<<line<<endl;
         allLine = allLine+line;
         if(line.find("end") !=std::string::npos){
             continueLoop = false;
@@ -54,7 +62,11 @@ string MyClientHandler::setInformation(IStreamReader *input) {
 
 
 }
-
+/**
+ * lexer
+ * @param longString string we get
+ * @return the information after lexing
+ */
 vector<vector<string >> MyClientHandler:: lexer(string longString){
 
     vector<vector<string>> returnVal;

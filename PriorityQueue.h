@@ -20,7 +20,7 @@ public:
 };
 
 template<class T>
-class MyPriorityQueue {
+class PriorityQueue {
     priority_queue<State<T>*,vector<State<T>*>,compOfPqueue<T>> pq;
 public:
     /*  unsigned long queueSize(){
@@ -30,13 +30,19 @@ public:
     bool empty(){
         return this->pq.empty();
     }
-
+/**
+ * pop from the queue
+ * @return
+ */
     State<T>* popOutFromthePqueue(){
         State<T>* topVal =  this->pq.top();
         this->pq.pop();
         return topVal;
     }
-
+/**
+ * add to the queue
+ * @param addVal
+ */
     void addToPqueue(State<T>* addVal){
         this->pq.push(addVal);
     }
@@ -46,7 +52,11 @@ public:
          return res;
      }*/
 
-
+/**
+ * check if it in the queue
+ * @param checkVal
+ * @return true if it in the queue
+ */
     bool isPqueueContains(State<T>* checkVal){
         bool returnVal = false;
         vector<State <T>*> temp;
@@ -63,7 +73,11 @@ public:
         }
         return returnVal;
     }
-
+/**
+ * update the queue according to the priority-what need to be first..
+ * @param curVal
+ * @param newVal
+ */
     void updatePqueuePriority(State<T>*curVal ,State<T>*newVal){
         double newPath;
         vector<State<T>*> temp;

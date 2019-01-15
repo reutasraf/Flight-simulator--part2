@@ -13,7 +13,6 @@ class MatrixSearchable : public Searchable<IndexsMat>{
     vector<vector<State<IndexsMat>*>> matrix;
     // 0 - col, 1 - row
 public:
-    //הערך התחלה שנכנס אחרי המטריצה - אמור להתבצע אתחול של הערך אחרי עיבוד הקלט?!!!!
 
     void setMatrix(vector<vector<State<IndexsMat >*>> mat){
         this->matrix =mat;
@@ -31,15 +30,11 @@ public:
         return this->start;
     }
 
-    //הערך סיום שנכנס אחרי המטריצה - כנל
     virtual State<IndexsMat>* getGoalState(){
         return this->end;
     }
-    //לא תומך באלכסונים, אופציונאלי לשמור רק שורות והעמודות ייוצגו לפי הרשימה?
     virtual vector<State<IndexsMat>*> getAllPossibleStates(State<IndexsMat>* state);
 
-
-    //if dose not exist return null?
     State<IndexsMat>* getNei(int col, int row);
 
 };

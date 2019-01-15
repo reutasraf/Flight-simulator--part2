@@ -15,17 +15,20 @@
 #include <sys/socket.h>
 
 
-
+/**
+ * write line to client
+ * @param s string
+ */
 void SocketWrite::writeLine(string s) {
-
 
     const char * ans=s.c_str();
     int n;
     /* Write a response to the client */
-    n = write(this->client_Id,ans,10000000000);
+    n = write(this->client_Id,ans,s.size());
 
     if (n < 0) {
         perror("ERROR writing to socket");
         exit(1);
+
     }
 }
