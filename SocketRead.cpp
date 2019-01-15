@@ -18,11 +18,12 @@ string SocketRead::getLine() {
     char buffer[1000];
     ssize_t bytes_read;
     bytes_read = read(this->client_sock_fd, buffer, 999);
+    //cout<<this->client_sock_fd<<endl;
     if (bytes_read < 0) {
         //cout<<"here";
         __throw_bad_exception();
     }   else if (bytes_read == 0)   {
-
+        __throw_bad_exception();
         //connection closed
         int y = 0;
     } else  {

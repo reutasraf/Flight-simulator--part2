@@ -34,6 +34,7 @@ class MyParallelServer :public Server{
     int clientSock;
     int serverSocket;
     bool shouldStop;
+
 public:
     MyParallelServer(){
         this->shouldStop = false;

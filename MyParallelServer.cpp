@@ -25,12 +25,17 @@ void* handleClient(void* arg){
 
 void* acceptClients(void* arg)
 {
+    //
+    vector<dataToSoc*> cli;
+    vector<pthread_t> forJoin;
+    //
+
+
+
     struct dataToSoc* params=(struct dataToSoc*) arg;
-    //auto args = static_cast<ParamsToUpdate*>(arg);
-    // SocketRead socketRead(args->getSocketClient());
-    //SocketWriter socketWriter(args->getSocketClient());
-    // pthread_mutex_lock(&args->getMutex());
-    //accept(args);
+
+
+
     char *hello = "Hello from server";
     char buffer[256];
     int  n;
@@ -53,7 +58,8 @@ void* acceptClients(void* arg)
             if (errno == EWOULDBLOCK)	{
                 cout << "timeout!" << endl;
                 //  pthread_mutex_unlock(&args->getMutex());
-                return nullptr;
+                //return nullptr;
+                break;
             }	else	{
                 perror("other error");
                 // pthread_mutex_unlock(&args->getMutex());
@@ -66,24 +72,33 @@ void* acceptClients(void* arg)
             if (params->sockClient < 0) {
                 throw invalid_argument("connection with client failed");
             }
-            /* read( clientSocketVal , buffer, 1024);
-             printf("%s\n",buffer );
-             send(clientSocketVal , hello , strlen(hello) , 0 );
-             printf("Hello message sent\n");*/
-            //args->getClient()->handleClient(&socketRead,&socketWriter);
+
+
             pthread_t threadId;
 
-            struct dataToSoc *para = new dataToSoc;
+            /*struct dataToSoc *para = new dataToSoc;
             para->ch = params->ch;
             para->sockServer = params->sockServer;
             para->port = params->port;
             para->sockClient = params->sockClient;
             para->shouldStop = params->shouldStop;
+            //
+            cli.push_back(para);*/
+            //
 
-            pthread_create(&threadId, nullptr, &handleClient, para);
-
+            pthread_create(&threadId, nullptr, &handleClient, params);
+            //
+            forJoin.push_back(threadId);
+            //
         }
 
+    }
+
+
+
+    for (int i =0;i<forJoin.size();++i){
+        pthread_join(forJoin[i], nullptr);
+        cout<<"hh"<<endl;
     }
     //  pthread_mutex_unlock(&args->getMutex());
     return nullptr;

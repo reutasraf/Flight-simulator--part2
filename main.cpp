@@ -140,7 +140,7 @@ int main(int args,char* argv[]) {
     //serchAstar->solve(ss);
     mySerialServer->open(port,clietS);
 
-    //mm->writeToFile();
+    mm->writeToFile();
 
     std::cout << "Hello, World!" << std::endl;
     return 0;

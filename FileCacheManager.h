@@ -15,10 +15,12 @@ template <class P,class S>
 class FileCacheManager: public ChachManager<P,S> {
 
 private:
+    pthread_mutex_t mutex;
     unordered_map<P,S> mapSolution;
 public:
     FileCacheManager(){
         this->loadFile();
+        pthread_mutex_init(&mutex, nullptr);
     }
     void loadFile();
     virtual bool IsSolutionSaved(P p);
@@ -32,10 +34,20 @@ public:
 
 template<class P, class S>
 bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
+    pthread_mutex_lock(&mutex);
     if(mapSolution.size()==0){
+        pthread_mutex_unlock(&mutex);
         return false;
     }
-    return mapSolution.count(p) > 0;
+    if(mapSolution.count(p) > 0){
+        pthread_mutex_unlock(&mutex);
+        return true;
+
+    }else {
+        pthread_mutex_unlock(&mutex);
+        return false;
+    }
+
 }
 
 template<class P, class S>
@@ -50,7 +62,10 @@ S FileCacheManager<P, S>::getSolution(P p) {
 template<class P, class S>
 void FileCacheManager<P, S>::saveSolution(P p, S s) {
 
+    pthread_mutex_lock(&mutex);
     this->mapSolution.insert(pair<P,S>(p,s));
+    pthread_mutex_unlock(&mutex);
+
 }
 
 template<class P, class S>
