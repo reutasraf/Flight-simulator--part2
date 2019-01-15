@@ -35,7 +35,7 @@ bool FileCacheManager<P, S>::IsSolutionSaved(P p) {
     if(mapSolution.size()==0){
         return false;
     }
-    return mapSolution.count(p) != 0;
+    return mapSolution.count(p) > 0;
 }
 
 template<class P, class S>

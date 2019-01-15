@@ -14,7 +14,11 @@ class AStar:public Searcher<T>{
     virtual int getNumberOfNodesEvaluated(){
         return this->nodeThatEleveted;
     }
-
+/**
+ * search for the shortest
+ * @param searchable
+ * @return the path
+ */
     vector<State<T>*> search(Searchable<T> *searchable) {
         vector<State<T>*> close;
         State<T>* goal = searchable->getGoalState();

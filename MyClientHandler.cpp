@@ -18,6 +18,7 @@ void MyClientHandler::handleClient(IStreamReader *input, OStreamWriter *output) 
         allLine.pop_back();
     }
 
+    sleep(7);
     if(this->cm->IsSolutionSaved(allLine)){
         output->writeLine(this->cm->getSolution(allLine));
         return;

@@ -72,7 +72,16 @@ void* acceptClients(void* arg)
              printf("Hello message sent\n");*/
             //args->getClient()->handleClient(&socketRead,&socketWriter);
             pthread_t threadId;
-            pthread_create(&threadId, nullptr, &handleClient, params);
+
+            struct dataToSoc *para = new dataToSoc;
+            para->ch = params->ch;
+            para->sockServer = params->sockServer;
+            para->port = params->port;
+            para->sockClient = params->sockClient;
+            para->shouldStop = params->shouldStop;
+
+            pthread_create(&threadId, nullptr, &handleClient, para);
+
         }
 
     }
@@ -115,7 +124,7 @@ void MyParallelServer:: start(dataToSoc* params){
         perror("ERROR on binding");
         exit(1);
     }
-    //TODO שיננו את המקסימומי
+
     if (listen(serverSocket, SOMAXCONN) < 0)   {
         perror("listen error");
         exit(1);
