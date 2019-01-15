@@ -65,28 +65,7 @@ int main() {
     return 0;
 }*/
 
-#include <vector>
-#include <iostream>
-
-#include "BreadthFirstSearch.h"
-#include "State.h"
-#include "SolveSearch.h"
-#include "DepthFirstSearch.h"
-#include "InterpaterAnswerMatrix.h"
-#include "ClientHandler.h"
-#include "ChachManager.h"
-#include "MyClientHandler.h"
-#include "Solver.h"
-#include "FileCacheManager.h"
-#include "SocketRead.h"
-#include <iostream>
-#include <chrono>
-#include "SocketWrite.h"
-#include "MyParallelServer.h"
-#include "IndexsMat.h"
-#include "BestFirstSearch.h"
-#include "SolveSearch.h"
-#include "AStar.h"
+#include "Controler.h"
 using namespace std;
 int main(int args,char* argv[]) {
 
@@ -97,45 +76,10 @@ int main(int args,char* argv[]) {
         perror( "invalid args");
         exit(1);
     }
+    auto * controller=new Controler();
+    controller->run(port);
+    delete (controller);
 
 
-    //  ParamsToUpdate* params = new ParamsToUpdate();
-    // auto start = std::chrono::system_clock::now();
-    //Searcher<int>* solver = new BestFirstSearch<int>();
-    auto* mySerialServer = new MyParallelServer;
-
-   //auto* ooo = new SocketRead(5402);ParallelServer
-   //auto* bbb = new SocketWriter(5400);
-
-
-    //RowAndCol fff()
-    // Searcher<> best = new BestFirstSearch
-    // auto* best = new BestFirstSearch<RowAndCol>();
-    auto* mm = new FileCacheManager<string,string>;
-    mm->loadFile();
-    auto* nn = new BreadthFirstSearch<IndexsMat>();
-    auto *best = new BestFirstSearch<IndexsMat>();
-    auto * dfs = new DepthFirstSearch<IndexsMat>();
-    auto *As = new AStar<IndexsMat>();
-    auto* interpeterProblem = new MatrixInter();
-    auto* interpterSolution = new InterpaterAnswerMatrix();
-
-
-    auto* serchBFS = new SolveSearch<IndexsMat, string>(nn,interpeterProblem,interpterSolution);
-    auto* serchDFS = new SolveSearch<IndexsMat, string>(dfs,interpeterProblem,interpterSolution);
-    auto* serchbest = new SolveSearch<IndexsMat, string>(best,interpeterProblem,interpterSolution);
-    auto* serchAstar = new SolveSearch<IndexsMat, string>(As,interpeterProblem,interpterSolution);
-    auto* clietS = new MyClientHandler(serchbest, mm);
-    //vector<vector<string>> ss = clietS->lexer(p);
-
-    //serchBFS->solve(ss);
-    //serchDFS->solve(ss);
-    //serchbest->solve(ss);
-    //serchAstar->solve(ss);
-    mySerialServer->open(port,clietS);
-
-    mm->writeToFile();
-
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

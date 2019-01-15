@@ -24,6 +24,7 @@ string SocketRead::getLine() {
     //cout<<this->client_sock_fd<<endl;
     if (bytes_read < 0) {
         //cout<<"here";
+        cout<<bytes_read<<endl;
         __throw_bad_exception();
     }else if (bytes_read == 0)   {
         __throw_bad_exception();

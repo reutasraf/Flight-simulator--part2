@@ -8,8 +8,9 @@
 using namespace std;
 //template <class T>
 class MatrixSearchable : public Searchable<IndexsMat>{
-    State<IndexsMat>* start;
+private:
     State<IndexsMat>* end;
+    State<IndexsMat>* start;
     vector<vector<State<IndexsMat>*>> matrix;
     // 0 - col, 1 - row
 public:
@@ -24,7 +25,14 @@ public:
         this->end = end;
     }
 
+    ~MatrixSearchable(){
+        for(int i=0;i<matrix.size();i++){
+            for (int j = 0; j < matrix[i].size(); ++j) {
+                delete(matrix[i][j]);
+            }
 
+        }
+    }
 
     virtual State<IndexsMat>* getInitialState(){
         return this->start;

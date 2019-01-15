@@ -44,11 +44,11 @@ public:
         //get the vector withe tha vertex and return wht we need(up,down,right,left...)
         string result= interpaterAnswerMatrix->interpretation(vector1);
 
-        //TODO delete states
-        //delete(matrix);
+        delete (matrix);
         return result;
 
     }
+
 
 };
 

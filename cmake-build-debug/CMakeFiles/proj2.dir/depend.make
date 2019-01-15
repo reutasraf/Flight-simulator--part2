@@ -3,6 +3,34 @@
 
 CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o: ../BreadthFirstSearch.cpp
 
+CMakeFiles/proj2.dir/Controler.cpp.o: ../AStar.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../BestFirstSearch.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../BreadthFirstSearch.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../ChachManager.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../ClientHandler.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Controler.cpp
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Controler.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../DepthFirstSearch.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../FileCacheManager.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../IStreamReader.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../IndexsMat.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../InterpaterAnswerMatrix.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Interpreter.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../MatrixInter.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../MatrixSearchable.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../MyClientHandler.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../MyParallelServer.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../OStreamWriter.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../PriorityQueue.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Searchable.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Searcher.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Server.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../SocketRead.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../SocketWrite.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../SolveSearch.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../Solver.h
+CMakeFiles/proj2.dir/Controler.cpp.o: ../State.h
+
 CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../IndexsMat.h
 CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../InterpaterAnswerMatrix.cpp
 CMakeFiles/proj2.dir/InterpaterAnswerMatrix.cpp.o: ../InterpaterAnswerMatrix.h
@@ -66,6 +94,7 @@ CMakeFiles/proj2.dir/main.cpp.o: ../BestFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../BreadthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ChachManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../ClientHandler.h
+CMakeFiles/proj2.dir/main.cpp.o: ../Controler.h
 CMakeFiles/proj2.dir/main.cpp.o: ../DepthFirstSearch.h
 CMakeFiles/proj2.dir/main.cpp.o: ../FileCacheManager.h
 CMakeFiles/proj2.dir/main.cpp.o: ../IStreamReader.h

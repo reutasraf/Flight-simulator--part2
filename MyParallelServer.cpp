@@ -53,7 +53,7 @@ void* acceptClients(void* arg)
         int new_sock;
 
         timeval timeout;
-        timeout.tv_sec = 30;
+        timeout.tv_sec = 10;
         timeout.tv_usec = 0;
 
         setsockopt(params->sockServer, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
