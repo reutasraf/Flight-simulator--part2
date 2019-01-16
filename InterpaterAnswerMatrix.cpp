@@ -41,6 +41,6 @@ string InterpaterAnswerMatrix::interpretation(vector<State<IndexsMat> *> vec) {
     string afterRe="";
     afterRe = result.substr(0,result.size()-1);
 
-    //cout<<afterRe<<endl;
+
     return afterRe;
 }

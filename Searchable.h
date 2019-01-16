@@ -12,6 +12,7 @@ template <class T>
 class Searchable{
 public:
 
+
     virtual State<T>* getInitialState() = 0;
 
     virtual State<T>* getGoalState()=0;

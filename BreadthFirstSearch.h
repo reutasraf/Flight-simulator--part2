@@ -28,7 +28,7 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
 
     // Create a queue for BFS
     std::list<State<T>*> queue;
-    //cout<<queue.size()<<endl;
+
 
     //vector<State<T>> close;
     State<T>* state = searchable->getInitialState();
@@ -88,9 +88,9 @@ vector<State<T>*> BreadthFirstSearch<T>::search(Searchable<T> *searchable) {
     //save number of nodes that evaluated
     //this->nodesEvaluated=returnVal.size();
 
-    cout<<"bfs"<<endl;
-    cout<<currentState->getShortestPathVal()<<endl;
-    cout<<this->nodesEvaluated<<endl;
+
+
+
     return returnVal;
 
 

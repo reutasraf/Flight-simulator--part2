@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/proj2.dir/SocketWrite.cpp.o"
   "CMakeFiles/proj2.dir/SocketRead.cpp.o"
   "CMakeFiles/proj2.dir/MyClientHandler.cpp.o"
-  "CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o"
   "CMakeFiles/proj2.dir/MyParallelServer.cpp.o"
   "CMakeFiles/proj2.dir/MatrixSearchable.cpp.o"
   "CMakeFiles/proj2.dir/MatrixInter.cpp.o"

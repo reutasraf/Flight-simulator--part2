@@ -20,6 +20,7 @@ private:
     MatrixInter* inter;
     InterpaterAnswerMatrix* interpaterAnswerMatrix;
 
+
 public:
 /**
  * constructor
@@ -44,11 +45,9 @@ public:
         //get the vector withe tha vertex and return wht we need(up,down,right,left...)
         string result= interpaterAnswerMatrix->interpretation(vector1);
 
-        delete (matrix);
         return result;
 
     }
-
 
 };
 

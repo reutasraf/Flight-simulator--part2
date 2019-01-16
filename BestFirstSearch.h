@@ -28,6 +28,7 @@ public:
 
     virtual vector<State<T>*> search(Searchable<T> *searchable) {
         path.clear();
+        nodesEvaluated = 0;
 
         this->openList = new PriorityQueue<T>();
         State<T>* start = searchable->getInitialState();
@@ -50,11 +51,9 @@ public:
                     goal = dadOfCurrent;
                 }
                 reverse(path.begin(),path.end());
-                //cout<<path.size()<<endl;
-                cout<<"best"<<endl;
+
                 State<T>* bb =path.back();
-                cout<<bb->getShortestPathVal()<<endl;
-                cout<<this->nodesEvaluated<<endl;
+
                 return path;
             }
             nodesEvaluated+=1;
@@ -96,9 +95,6 @@ public:
         }
 
         reverse(path.begin(),path.end());
-        cout<<"best"<<endl;
-        cout<<path.back()->getShortestPathVal()<<endl;
-        cout<<this->nodesEvaluated<<endl;
         return path;
     }
 

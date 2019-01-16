@@ -64,16 +64,16 @@ int MySerialServer::open(int port, ClientHandler* clientHandler) {
 }
 int accept(int sock_fd)
 {
-    //std::cout << "Waiting for connection..." << endl;
+
     sockaddr_in client_sock;
     int clilen;
     int client_sock_fd = ::accept(sock_fd, (struct sockaddr*) &client_sock, (socklen_t *)&clilen);
     if (client_sock_fd < 0) {
-        cout<<"accept";
+
         __throw_bad_exception();
     }
     return client_sock_fd;
-    //std::cout << "hi" << std::endl;
+
 
 }
 

@@ -29,6 +29,7 @@ public:
     void writeToFile();
     ~FileCacheManager(){
         writeToFile();
+        pthread_mutex_destroy(&mutex);
     }
 };
 

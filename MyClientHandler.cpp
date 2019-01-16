@@ -52,7 +52,7 @@ string MyClientHandler::setInformation(IStreamReader *input) {
         if(line[line.size()-1]!='\n'){
             line=line+'\n';
         }
-        //cout<<line<<endl;
+
         allLine = allLine+line;
         if(line.find("end") !=std::string::npos){
             continueLoop = false;

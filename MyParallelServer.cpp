@@ -38,8 +38,6 @@ void* acceptClients(void* arg)
 
     struct dataToSoc* params=(struct dataToSoc*) arg;
 
-
-
     char *hello = "Hello from server";
     char buffer[256];
     int  n;
@@ -47,31 +45,54 @@ void* acceptClients(void* arg)
     int clientSocketVal;
     int clilen = sizeof(client_sock);
 
+
+    struct dataToSoc *para = new dataToSoc;
+    para->ch = params->ch;
+    para->sockServer = params->sockServer;
+    para->port = params->port;
+    para->sockClient = params->sockClient;
+    para->shouldStop = params->shouldStop;
+    //
+    cli.push_back(para);
+    //
+
+    //waits unlimited time for the first client
+    clientSocketVal = ::accept(para->sockServer, (struct sockaddr *) &client_sock, (socklen_t *) &clilen);
+    para->sockClient = clientSocketVal;
+    //push to list to free later
+
+
+    if (para->sockClient < 0) {
+        throw invalid_argument("connection with client failed");
+    }
+    pthread_t threadId;
+    pthread_create(&threadId, nullptr, &handleClient, para);
+    forJoin.push_back(threadId);
+    //now is limited time
     while (!*(params->shouldStop)){
 
 
         int new_sock;
 
         timeval timeout;
-        timeout.tv_sec = 10;
+        timeout.tv_sec = 1;
         timeout.tv_usec = 0;
 
+
         setsockopt(params->sockServer, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
+
         clientSocketVal = ::accept(params->sockServer, (struct sockaddr *) &client_sock, (socklen_t *) &clilen);
         if (clientSocketVal < 0)	{
             if (errno == EWOULDBLOCK)	{
-                cout << "timeout!" << endl;
-                //  pthread_mutex_unlock(&args->getMutex());
-                //return nullptr;
+
+
                 break;
             }	else	{
                 perror("other error");
-                // pthread_mutex_unlock(&args->getMutex());
                 return nullptr;
             }
         }else{
 
-            //clientSocketVal = ::accept(*args->getSocketServer(), (struct sockaddr *) &client_sock, (socklen_t *) &clilen);
             params->sockClient = clientSocketVal;
             if (params->sockClient < 0) {
                 throw invalid_argument("connection with client failed");
@@ -91,6 +112,9 @@ void* acceptClients(void* arg)
             //
 
             pthread_create(&threadId, nullptr, &handleClient, params);
+
+            timeout.tv_sec = 0;
+            setsockopt(params->sockClient, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
             //
             forJoin.push_back(threadId);
             //
@@ -102,7 +126,7 @@ void* acceptClients(void* arg)
 
     for (int i =0;i<forJoin.size();++i){
         pthread_join(forJoin[i], nullptr);
-        cout<<"hh"<<endl;
+
     }
     //  pthread_mutex_unlock(&args->getMutex());
 
@@ -164,9 +188,8 @@ void MyParallelServer:: start(dataToSoc* params){
     pthread_create(&thread, nullptr, &acceptClients, params);
 
     pthread_join(thread, nullptr);
-//    pthread_mutex_lock(&paramsToUpdate->getMutex());
-//
-    cout<<"!!!i'm in love with you!!! "<<endl;
+
+
 }
 
 /**
@@ -175,6 +198,6 @@ void MyParallelServer:: start(dataToSoc* params){
 void MyParallelServer:: stop(){
     pthread_cancel(thread);
     close(this->serverSocket);
-    cout << "Server stopped" << endl;
+
 
 }

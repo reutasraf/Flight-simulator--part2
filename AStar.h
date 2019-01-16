@@ -20,6 +20,8 @@ class AStar:public Searcher<T>{
  * @return the path
  */
     vector<State<T>*> search(Searchable<T> *searchable) {
+        open1.clear();
+        nodeThatEleveted = 0;
         vector<State<T>*> close;
         State<T>* goal = searchable->getGoalState();
         State<T>* start = searchable->getInitialState();
@@ -88,9 +90,10 @@ class AStar:public Searcher<T>{
 
         std::reverse(returnVal.begin(),returnVal.end());
 
+        /*
         cout<<"astar"<<endl;
         cout<<goal->getShortestPathVal()<<endl;
-        cout<<this->nodeThatEleveted<<endl;
+        cout<<this->nodeThatEleveted<<endl;*/
         return returnVal;
     }
 

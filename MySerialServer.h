@@ -26,7 +26,7 @@ public:
     virtual void stop(){
         this->shouldStop = false;
         close(this->sock_fd);
-        //TODO close server
+
     }
     void* OpenThread(void* pVoid);
 

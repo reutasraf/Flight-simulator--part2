@@ -26,12 +26,25 @@ public:
     }
 
     ~MatrixSearchable(){
-        for(int i=0;i<matrix.size();i++){
+
+        /*for(int i=0;i<matrix.size();++i){
             for (int j = 0; j < matrix[i].size(); ++j) {
                 delete(matrix[i][j]);
             }
 
+        }*/
+
+        while(!matrix.empty()){
+            vector<State<IndexsMat>*> gg = matrix.back();
+            while(!gg.empty()){
+                delete(gg.back());
+                gg.pop_back();
+            }
+            gg.clear();
+            matrix.pop_back();
         }
+        matrix.clear();
+
     }
 
     virtual State<IndexsMat>* getInitialState(){

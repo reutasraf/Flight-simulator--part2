@@ -3,6 +3,7 @@
 //
 
 #include "Controler.h"
+#include "MySerialServer.h"
 
 void Controler::run(int port) {
     auto* parallelServer = new MyParallelServer;
@@ -13,16 +14,6 @@ void Controler::run(int port) {
     auto* serchAstar = new SolveSearch<IndexsMat, string>(As,interpeterProblem,interpterSolution);
     auto* clietS = new MyClientHandler(serchAstar, cm);
     parallelServer->open(port,clietS);
-
-    cm->writeToFile();
-
-
-
-
-
-
-
-
 
 
     delete (clietS);

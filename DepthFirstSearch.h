@@ -93,9 +93,6 @@ vector<State<T>*> DepthFirstSearch<T>::search(Searchable<T> *searchable) {
     //save number of nodes that evaluated
     //this->nodesEvaluated=vecNodes.size();
 
-    cout<<"dfs"<<endl;
-    cout<<goalState->getShortestPathVal()<<endl;
-    cout<<this->nodesEvaluated<<endl;
     return vecNodes;
 }
 

@@ -42,5 +42,10 @@ Searchable<IndexsMat>* MatrixInter::interpretation(vector<vector<string>> input)
     }
 
     matrixSearchable->setMatrix(matrix);
+
+
+    jj.push_back(matrixSearchable);
+
+
     return matrixSearchable;
 }

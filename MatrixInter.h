@@ -13,8 +13,18 @@
 
 using namespace std;
 class MatrixInter: public Interpreter<vector<vector<string>>,Searchable<IndexsMat>*>  {
+
+
+    vector<MatrixSearchable*> jj;
+
 public:
     virtual Searchable<IndexsMat>* interpretation(vector<vector<string>>);
+    ~MatrixInter(){
+        while (!jj.empty()){
+            delete (jj.back());
+            jj.pop_back();
+        }
+    }
 
 };
 

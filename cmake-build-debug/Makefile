@@ -123,33 +123,6 @@ proj2/fast:
 	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/build
 .PHONY : proj2/fast
 
-BreadthFirstSearch.o: BreadthFirstSearch.cpp.o
-
-.PHONY : BreadthFirstSearch.o
-
-# target to build an object file
-BreadthFirstSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.o
-.PHONY : BreadthFirstSearch.cpp.o
-
-BreadthFirstSearch.i: BreadthFirstSearch.cpp.i
-
-.PHONY : BreadthFirstSearch.i
-
-# target to preprocess a source file
-BreadthFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.i
-.PHONY : BreadthFirstSearch.cpp.i
-
-BreadthFirstSearch.s: BreadthFirstSearch.cpp.s
-
-.PHONY : BreadthFirstSearch.s
-
-# target to generate assembly for a file
-BreadthFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/proj2.dir/build.make CMakeFiles/proj2.dir/BreadthFirstSearch.cpp.s
-.PHONY : BreadthFirstSearch.cpp.s
-
 Controler.o: Controler.cpp.o
 
 .PHONY : Controler.o
@@ -456,9 +429,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... proj2"
-	@echo "... BreadthFirstSearch.o"
-	@echo "... BreadthFirstSearch.i"
-	@echo "... BreadthFirstSearch.s"
 	@echo "... Controler.o"
 	@echo "... Controler.i"
 	@echo "... Controler.s"
